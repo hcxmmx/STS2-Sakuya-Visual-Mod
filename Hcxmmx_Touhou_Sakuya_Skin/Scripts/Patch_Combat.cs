@@ -61,6 +61,9 @@ internal static class SakuyaCombatNodeCache
 [HarmonyPatch(typeof(NCreature), nameof(NCreature._Ready))]
 internal static class NCreature_Ready_Patch
 {
+    // 赛博保险丝：本局内Ready阶段VFX缺失错误仅播报一次。
+    private static bool _hasPrintedReadyVfxError = false;
+
     private static void Postfix(NCreature __instance)
     {
         SakuyaGlobals.IsDead = false;
@@ -109,12 +112,16 @@ internal static class NCreature_Ready_Patch
         else
         {
             // 🚨 赛博听诊器：如果还抓不到，这行红字绝对会暴露真凶！
-            GD.PrintErr("💥 严重事故：全图扫描未发现 'SakuyaVFX' 节点！长官请检查 Godot 里节点名字是否拼写正确！");
+            if (!_hasPrintedReadyVfxError)
+            {
+                GD.PrintErr("💥 严重事故：全图扫描未发现 'SakuyaVFX' 节点！长官请检查 Godot 里节点名字是否拼写正确！(为防卡顿，此错误本局仅播报一次)");
+                _hasPrintedReadyVfxError = true;
+            }
         }
 
         if (sakuyaSprite != null)
         {
-            SakuyaGlobals.ActiveSakuyaSprites.RemoveWhere(s => !GodotObject.IsInstanceValid(s));
+            SakuyaGlobals.CleanupActiveSakuyaSprites();
             SakuyaGlobals.ActiveSakuyaSprites.Add(sakuyaSprite);
 
             sakuyaSprite.AnimationFinished += () =>
@@ -171,6 +178,9 @@ internal static class NCreature_Ready_Patch
 [HarmonyPatch(typeof(NCreature), nameof(NCreature.SetAnimationTrigger))]
 internal static class NCreature_SetAnimationTrigger_Patch
 {
+    // 赛博保险丝：本局内VFX缺失错误仅播报一次，避免高频刷屏。
+    private static bool _hasPrintedVfxError = false;
+
     private static void Postfix(NCreature __instance, string trigger)
     {
         if (SakuyaGlobals.IsInShop || SakuyaGlobals.IsDead) return;
@@ -294,17 +304,20 @@ internal static class NCreature_SetAnimationTrigger_Patch
 
                 if (sakuyaVFX != null)
                 {
-                    // 🎲 极其关键的极客知识：C# 的 Rng.Next(min, max) 包含 min，但不包含 max！
-                    // 所以要想抽出 1, 2, 3, 4, 5，必须极其精准地写成 (1, 6)！
-                    int randomVfxIndex = SakuyaGlobals.Rng.Next(1, 6); 
+                    int randomVfxIndex = SakuyaGlobals.Rng.Next(SakuyaGlobals.VfxNames.Length);
+                    string selectedVfx = SakuyaGlobals.VfxNames[randomVfxIndex];
                     
                     sakuyaVFX.Visible = true;
-                    sakuyaVFX.Play($"CastEffect_{randomVfxIndex}"); 
-                    SakuyaGlobals.VerboseLog($"🎇 极其华丽地抽中并引爆了特效：CastEffect_{randomVfxIndex} !");
+                    sakuyaVFX.Play(selectedVfx);
+                    SakuyaGlobals.VerboseLog($"🎇 极其华丽地抽中并引爆了特效：{selectedVfx} !");
                 }
                 else
                 {
-                    GD.PrintErr("💥 严重事故：全图扫描未发现 'SakuyaVFX' 节点！");
+                    if (!_hasPrintedVfxError)
+                    {
+                        GD.PrintErr("💥 严重事故：全图扫描未发现 'SakuyaVFX' 节点！(为防卡顿，此错误本局仅播报一次)");
+                        _hasPrintedVfxError = true;
+                    }
                 }
                 sakuyaMecha.Position = Vector2.Zero;
                 break;
@@ -353,7 +366,7 @@ internal static class CombatManager_EndCombatInternal_Patch
     private static void Prefix(object __instance) 
     {
         SakuyaGlobals.VerboseLog("\n====== 🏆 侦测到底层宣布战斗结束！通过红魔馆频道呼叫全体女仆！ ======");
-        SakuyaGlobals.ActiveSakuyaSprites.RemoveWhere(s => !GodotObject.IsInstanceValid(s));
+        SakuyaGlobals.CleanupActiveSakuyaSprites();
 
         if (SakuyaGlobals.ActiveSakuyaSprites.Count <= 0) return;
 

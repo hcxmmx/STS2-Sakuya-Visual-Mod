@@ -29,7 +29,7 @@ internal static class GameOverScreen_Ready_Patch
         // 🛡️ V1.0.2 火速抢修：终极双重防爆盾！
         // ==========================================
         // 1. 赛博清道夫：先把上一局残留的、已经被引擎销毁的机甲幻影从雷达里删掉
-        SakuyaGlobals.ActiveSakuyaSprites.RemoveWhere(s => !GodotObject.IsInstanceValid(s));
+        SakuyaGlobals.CleanupActiveSakuyaSprites();
 
         // 2. 极其精准的 DNA 验证：
         // 如果【她没有被宣告阵亡】(IsDead为false) 并且 【当前场上也没有活着的机甲】(Count为0)
@@ -84,7 +84,10 @@ internal static class GameOverScreen_Ready_Patch
             sakuyaImage.Modulate = new Color(1, 1, 1, 0); 
 
             /// 4. 召唤赛博动画师：极其凄美的三段式生离死别演出！
-            var tween = sakuyaImage.GetTree().CreateTween();
+              var tree = sakuyaImage.GetTree();
+              if (tree == null) return;
+
+              var tween = tree.CreateTween();
             
             // 🎬 第一幕【淡入】：透明度变到 1.0，耗时 3.0 秒（长官可极其自由地修改）
             tween.TweenProperty(sakuyaImage, "modulate:a", 1.0f, 3.0f)

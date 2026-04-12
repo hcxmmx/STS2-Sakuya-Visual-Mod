@@ -1,4 +1,5 @@
 using System;
+using System.Runtime.CompilerServices;
 using Godot;
 
 namespace Hcxmmx.SakuyaMod.Scripts; // ✅ 极其规范的新命名空间
@@ -50,6 +51,7 @@ public static class SakuyaGlobals
     public static readonly string[] HitPool = { "Hit_1", "Hit_2", "Hit_3" };
     public static readonly string[] CastPool = { "Cast_1", "Cast_2", "Cast_3", "Cast_4", "Cast_5" };
     public static readonly string[] ShivPool = { "Shiv_1", "Shiv_2", "Shiv_3" };
+    public static readonly string[] VfxNames = { "CastEffect_1", "CastEffect_2", "CastEffect_3", "CastEffect_4", "CastEffect_5" };
 
     // ==========================================
     // 5. 语音光盘库 (极其华丽的装填完毕！)
@@ -86,6 +88,8 @@ public static class SakuyaGlobals
 
     private static readonly System.Collections.Generic.Dictionary<string, AudioStream> AudioStreamCache =
         new(System.StringComparer.Ordinal);
+    private static readonly ConditionalWeakTable<object, string> CardEntryCache = new();
+    private static readonly System.Collections.Generic.List<AnimatedSprite2D> InvalidSpriteBuffer = new();
     // ==========================================
     // 底层工具方法 (保持不变)
     // ==========================================
@@ -125,10 +129,49 @@ public static class SakuyaGlobals
     public static string? GetCardEntry(object? card)
     {
         if (card == null) return null;
+
+        if (CardEntryCache.TryGetValue(card, out var cachedEntry))
+        {
+            return cachedEntry;
+        }
+
         try {
             var idObj = HarmonyLib.Traverse.Create(card).Property("Id").GetValue() ?? HarmonyLib.Traverse.Create(card).Field("Id").GetValue();
-            return HarmonyLib.Traverse.Create(idObj).Property("Entry").GetValue<string>() ?? HarmonyLib.Traverse.Create(idObj).Field("Entry").GetValue<string>();
+            var entry = HarmonyLib.Traverse.Create(idObj).Property("Entry").GetValue<string>() ?? HarmonyLib.Traverse.Create(idObj).Field("Entry").GetValue<string>();
+            if (!string.IsNullOrEmpty(entry))
+            {
+                try
+                {
+                    CardEntryCache.Add(card, entry);
+                }
+                catch (ArgumentException)
+                {
+                    // 其他线程可能已先写入缓存，直接忽略即可。
+                }
+            }
+
+            return entry;
         } catch { return null; }
+    }
+
+    public static void CleanupActiveSakuyaSprites()
+    {
+        if (ActiveSakuyaSprites.Count == 0) return;
+
+        InvalidSpriteBuffer.Clear();
+        foreach (var sprite in ActiveSakuyaSprites)
+        {
+            if (!GodotObject.IsInstanceValid(sprite))
+            {
+                InvalidSpriteBuffer.Add(sprite);
+            }
+        }
+
+        for (int i = 0; i < InvalidSpriteBuffer.Count; i++)
+        {
+            ActiveSakuyaSprites.Remove(InvalidSpriteBuffer[i]);
+        }
+        InvalidSpriteBuffer.Clear();
     }
 
     public static AudioStream? GetAudioStreamCached(string? resourcePath)
