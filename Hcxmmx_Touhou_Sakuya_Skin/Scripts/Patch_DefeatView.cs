@@ -25,11 +25,21 @@ internal static class GameOverScreen_Ready_Patch
     {
         GD.Print("\n====== 😭 侦测到赛博惨败！启动【多重战损反馈协议】 ======");
 
-        if (SakuyaGlobals.SakuyaScene == null) 
+        // ==========================================
+        // 🛡️ V1.0.2 火速抢修：终极双重防爆盾！
+        // ==========================================
+        // 1. 赛博清道夫：先把上一局残留的、已经被引擎销毁的机甲幻影从雷达里删掉
+        SakuyaGlobals.ActiveSakuyaSprites.RemoveWhere(s => !GodotObject.IsInstanceValid(s));
+
+        // 2. 极其精准的 DNA 验证：
+        // 如果【她没有被宣告阵亡】(IsDead为false) 并且 【当前场上也没有活着的机甲】(Count为0)
+        // 就说明死的是铁甲战士或者天子，极其高冷地跳过演出！
+        if (!SakuyaGlobals.IsDead && SakuyaGlobals.ActiveSakuyaSprites.Count == 0) 
         {
-            GD.Print("当前不是完美女仆的战局，极其高冷地跳过战损演出。");
+            GD.Print("当前战局并非完美女仆的受难时刻，极其高冷地跳过战损演出。");
             return; 
         }
+        // ==========================================
 
         string scenePath = "res://Hcxmmx_Touhou_Sakuya_Skin/Scenes/DamagedSakuyaOverlay.tscn"; 
         var damagedScene = ResourceLoader.Load<PackedScene>(scenePath);
