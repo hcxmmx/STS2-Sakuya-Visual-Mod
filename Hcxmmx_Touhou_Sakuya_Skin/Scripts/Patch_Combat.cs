@@ -6,6 +6,58 @@ using MegaCrit.Sts2.Core.Nodes.Combat;
 
 namespace Hcxmmx.SakuyaMod.Scripts;
 
+internal static class SakuyaCombatNodeCache
+{
+    private static readonly StringName SpriteKey = new("SakuyaSpriteRef");
+    private static readonly StringName VoiceKey = new("SakuyaVoiceRef");
+    private static readonly StringName VfxKey = new("SakuyaVFXRef");
+
+    internal static void Store(Node2D mecha, AnimatedSprite2D? sprite, AudioStreamPlayer2D? voice, AnimatedSprite2D? vfx)
+    {
+        if (sprite != null) mecha.SetMeta(SpriteKey, sprite);
+        if (voice != null) mecha.SetMeta(VoiceKey, voice);
+        if (vfx != null) mecha.SetMeta(VfxKey, vfx);
+    }
+
+    internal static AnimatedSprite2D? GetSprite(Node2D mecha)
+    {
+        var sprite = GetCachedNode<AnimatedSprite2D>(mecha, SpriteKey);
+        if (sprite != null) return sprite;
+
+        sprite = SakuyaGlobals.FindFirstNode<AnimatedSprite2D>(mecha);
+        if (sprite != null) mecha.SetMeta(SpriteKey, sprite);
+        return sprite;
+    }
+
+    internal static AudioStreamPlayer2D? GetVoice(Node2D mecha)
+    {
+        var voice = GetCachedNode<AudioStreamPlayer2D>(mecha, VoiceKey);
+        if (voice != null) return voice;
+
+        voice = SakuyaGlobals.FindFirstNode<AudioStreamPlayer2D>(mecha, n => n.Name == "SakuyaVoice");
+        if (voice != null) mecha.SetMeta(VoiceKey, voice);
+        return voice;
+    }
+
+    internal static AnimatedSprite2D? GetVfx(Node2D mecha)
+    {
+        var vfx = GetCachedNode<AnimatedSprite2D>(mecha, VfxKey);
+        if (vfx != null) return vfx;
+
+        vfx = SakuyaGlobals.FindFirstNode<AnimatedSprite2D>(mecha, n => n.Name == "SakuyaVFX");
+        if (vfx != null) mecha.SetMeta(VfxKey, vfx);
+        return vfx;
+    }
+
+    private static T? GetCachedNode<T>(Node2D mecha, StringName key) where T : Node
+    {
+        if (!mecha.HasMeta(key)) return null;
+
+        var cachedObject = mecha.GetMeta(key).AsGodotObject();
+        return cachedObject is T node && GodotObject.IsInstanceValid(node) ? node : null;
+    }
+}
+
 [HarmonyPatch(typeof(NCreature), nameof(NCreature._Ready))]
 internal static class NCreature_Ready_Patch
 {
@@ -13,7 +65,7 @@ internal static class NCreature_Ready_Patch
     {
         SakuyaGlobals.IsDead = false;
         SakuyaGlobals.IsInShop = false;
-        GD.Print($"\n---> Sakuya Maid Project: 侦测到 NCreature 试图活化！节点名称 = {__instance.Name} <---");
+        SakuyaGlobals.VerboseLog($"\n---> Sakuya Maid Project: 侦测到 NCreature 试图活化！节点名称 = {__instance.Name} <---");
 
         var scene = SakuyaGlobals.SakuyaScene ?? ResourceLoader.Load<PackedScene>(SakuyaGlobals.SakuyaScenePath);
         SakuyaGlobals.SakuyaScene = scene;
@@ -26,7 +78,7 @@ internal static class NCreature_Ready_Patch
         var visuals = __instance.Visuals;
         if (visuals == null) return;
 
-        GD.Print("====== 突破所有防线！强行挂载完美女仆！ ======");
+        SakuyaGlobals.VerboseLog("====== 突破所有防线！强行挂载完美女仆！ ======");
         var originalBody = visuals.GetNodeOrNull<Node2D>("%Visuals");
         originalBody?.Hide();
 
@@ -35,7 +87,7 @@ internal static class NCreature_Ready_Patch
 
         sakuyaNode.Name = "SakuyaMecha";
         visuals.AddChild(sakuyaNode);
-        sakuyaNode.Position = new Vector2(0, 0);
+        sakuyaNode.Position = Vector2.Zero;
         sakuyaNode.Scale = new Vector2(3.0f, 3.0f);
         sakuyaNode.Visible = true;
 
@@ -46,6 +98,7 @@ internal static class NCreature_Ready_Patch
         // 🎇 极其清爽的单轨特效节点抓取！
         // ==========================================
         var sakuyaVFX = SakuyaGlobals.FindFirstNode<AnimatedSprite2D>(sakuyaNode, n => n.Name == "SakuyaVFX");
+        SakuyaCombatNodeCache.Store(sakuyaNode, sakuyaSprite, sakuyaVoice, sakuyaVFX);
 
         if (sakuyaVFX != null)
         {
@@ -69,7 +122,7 @@ internal static class NCreature_Ready_Patch
                 if (sakuyaSprite.Animation != "Idle" && sakuyaSprite.Animation != "Die" && sakuyaSprite.Animation != "Victory")
                 {
                     sakuyaSprite.Play("Idle");
-                    sakuyaNode.Position = new Vector2(0, 0);
+                    sakuyaNode.Position = Vector2.Zero;
                 }
             };
 
@@ -78,9 +131,9 @@ internal static class NCreature_Ready_Patch
             if (sakuyaVoice != null)
             {
                 string chosenIntroVoice = SakuyaGlobals.IntroVoicePool[SakuyaGlobals.Rng.Next(SakuyaGlobals.IntroVoicePool.Length)];
-                sakuyaVoice.Stream = ResourceLoader.Load<AudioStream>(chosenIntroVoice);
+                sakuyaVoice.Stream = SakuyaGlobals.GetAudioStreamCached(chosenIntroVoice);
                 sakuyaVoice.Play();
-                GD.Print($"📢 入场播报：极其优雅地播放了 {chosenIntroVoice} !");
+                SakuyaGlobals.VerboseLog($"📢 入场播报：极其优雅地播放了 {chosenIntroVoice} !");
             }
         }
 
@@ -95,19 +148,23 @@ internal static class NCreature_Ready_Patch
 
         syncTimer.Timeout += () =>
         {
-            if (GodotObject.IsInstanceValid(bodyRef) && GodotObject.IsInstanceValid(sakuyaRef))
+            if (!GodotObject.IsInstanceValid(bodyRef) || !GodotObject.IsInstanceValid(sakuyaRef))
             {
-                float targetSign = Mathf.Sign(bodyRef.Scale.X);
-                float currentSign = Mathf.Sign(sakuyaRef.Scale.X);
+                syncTimer.Stop();
+                syncTimer.QueueFree();
+                return;
+            }
 
-                if (targetSign != currentSign && targetSign != 0)
-                {
-                    float absX = Mathf.Abs(sakuyaRef.Scale.X);
-                    sakuyaRef.Scale = new Vector2(absX * targetSign, sakuyaRef.Scale.Y);
-                }
+            float targetSign = Mathf.Sign(bodyRef.Scale.X);
+            float currentSign = Mathf.Sign(sakuyaRef.Scale.X);
+
+            if (targetSign != currentSign && targetSign != 0)
+            {
+                float absX = Mathf.Abs(sakuyaRef.Scale.X);
+                sakuyaRef.Scale = new Vector2(absX * targetSign, sakuyaRef.Scale.Y);
             }
         };
-        GD.Print("咲夜物理矫正完毕！");
+        SakuyaGlobals.VerboseLog("咲夜物理矫正完毕！");
     }
 }
 
@@ -125,12 +182,12 @@ internal static class NCreature_SetAnimationTrigger_Patch
         var sakuyaMecha = visuals?.GetNodeOrNull<Node2D>("SakuyaMecha");
         if (sakuyaMecha == null) return;
 
-        var sakuyaSprite = SakuyaGlobals.FindFirstNode<AnimatedSprite2D>(sakuyaMecha);
-        var sakuyaVoice = SakuyaGlobals.FindFirstNode<AudioStreamPlayer2D>(sakuyaMecha, n => n.Name == "SakuyaVoice");
+        var sakuyaSprite = SakuyaCombatNodeCache.GetSprite(sakuyaMecha);
+        var sakuyaVoice = SakuyaCombatNodeCache.GetVoice(sakuyaMecha);
 
         if (sakuyaSprite == null) return;
 
-        GD.Print($"---> Sakuya Maid Project: 收到动作指令: {trigger} <---");
+        SakuyaGlobals.VerboseLog($"---> Sakuya Maid Project: 收到动作指令: {trigger} <---");
 
         switch (trigger)
         {
@@ -143,7 +200,7 @@ internal static class NCreature_SetAnimationTrigger_Patch
                 // ==========================================
                 if (SakuyaGlobals.NextAttackIsFinale)
                 {
-                    GD.Print("极其优雅地拦截了普通攻击，转换为华丽收场处决！");
+                    SakuyaGlobals.VerboseLog("极其优雅地拦截了普通攻击，转换为华丽收场处决！");
                     SakuyaGlobals.NextAttackIsFinale = false; // 用完立刻销毁防连发
 
                     sakuyaSprite.Stop();
@@ -152,10 +209,10 @@ internal static class NCreature_SetAnimationTrigger_Patch
                     if (sakuyaVoice != null && SakuyaGlobals.CastVoicePool.Length > 0)
                     {
                         string chosenFinaleVoice = SakuyaGlobals.CastVoicePool[SakuyaGlobals.Rng.Next(SakuyaGlobals.CastVoicePool.Length)];
-                        sakuyaVoice.Stream = ResourceLoader.Load<AudioStream>(chosenFinaleVoice);
+                        sakuyaVoice.Stream = SakuyaGlobals.GetAudioStreamCached(chosenFinaleVoice);
                         sakuyaVoice.Play();
                     }
-                    sakuyaMecha.Position = new Vector2(0, 0);
+                    sakuyaMecha.Position = Vector2.Zero;
                     break; // 🚨 极其关键的 break，阻止播放普通攻击！
                 }
                 // ==========================================
@@ -163,17 +220,17 @@ internal static class NCreature_SetAnimationTrigger_Patch
                 string chosenAttack = SakuyaGlobals.AttackPool[SakuyaGlobals.Rng.Next(SakuyaGlobals.AttackPool.Length)];
                 string chosenAttackVoice = SakuyaGlobals.AttackVoicePool[SakuyaGlobals.Rng.Next(SakuyaGlobals.AttackVoicePool.Length)];
                 
-                GD.Print($"极其华丽地抽中了: {chosenAttack} !");
+                SakuyaGlobals.VerboseLog($"极其华丽地抽中了: {chosenAttack} !");
                 sakuyaSprite.Stop();
                 sakuyaSprite.Play(chosenAttack);
 
                 if (sakuyaVoice != null)
                 {
-                    sakuyaVoice.Stream = ResourceLoader.Load<AudioStream>(chosenAttackVoice);
+                    sakuyaVoice.Stream = SakuyaGlobals.GetAudioStreamCached(chosenAttackVoice);
                     sakuyaVoice.Play();
                 }
 
-                sakuyaMecha.Position = new Vector2(0, 0);
+                sakuyaMecha.Position = Vector2.Zero;
                 break;
             }
             case "Shiv":
@@ -186,17 +243,17 @@ internal static class NCreature_SetAnimationTrigger_Patch
                     chosenShivVoice = SakuyaGlobals.ShivVoicePool[SakuyaGlobals.Rng.Next(SakuyaGlobals.ShivVoicePool.Length)];
                 }
                 
-                GD.Print($"极其精准地掷出了小刀: {chosenShiv} !");
+                SakuyaGlobals.VerboseLog($"极其精准地掷出了小刀: {chosenShiv} !");
                 sakuyaSprite.Stop();
                 sakuyaSprite.Play(chosenShiv);
 
                 if (sakuyaVoice != null && !string.IsNullOrEmpty(chosenShivVoice))
                 {
-                    sakuyaVoice.Stream = ResourceLoader.Load<AudioStream>(chosenShivVoice);
+                    sakuyaVoice.Stream = SakuyaGlobals.GetAudioStreamCached(chosenShivVoice);
                     sakuyaVoice.Play();
                 }
 
-                sakuyaMecha.Position = new Vector2(0, 0);
+                sakuyaMecha.Position = Vector2.Zero;
                 break;
             }
             case "Hit":
@@ -209,11 +266,11 @@ internal static class NCreature_SetAnimationTrigger_Patch
 
                 if (sakuyaVoice != null)
                 {
-                    sakuyaVoice.Stream = ResourceLoader.Load<AudioStream>(chosenHitVoice);
+                    sakuyaVoice.Stream = SakuyaGlobals.GetAudioStreamCached(chosenHitVoice);
                     sakuyaVoice.Play();
                 }
 
-                sakuyaMecha.Position = new Vector2(0, 0);
+                sakuyaMecha.Position = Vector2.Zero;
                 break;
             }
             case "Cast":
@@ -226,14 +283,14 @@ internal static class NCreature_SetAnimationTrigger_Patch
 
                 if (sakuyaVoice != null)
                 {
-                    sakuyaVoice.Stream = ResourceLoader.Load<AudioStream>(chosenCastVoice);
+                    sakuyaVoice.Stream = SakuyaGlobals.GetAudioStreamCached(chosenCastVoice);
                     sakuyaVoice.Play();
                 }
 
                 // ==========================================
                 // 🎇 极其纯粹的五连抽特效引爆器！
                 // ==========================================
-                var sakuyaVFX = SakuyaGlobals.FindFirstNode<AnimatedSprite2D>(sakuyaMecha, n => n.Name == "SakuyaVFX");
+                var sakuyaVFX = SakuyaCombatNodeCache.GetVfx(sakuyaMecha);
 
                 if (sakuyaVFX != null)
                 {
@@ -243,13 +300,13 @@ internal static class NCreature_SetAnimationTrigger_Patch
                     
                     sakuyaVFX.Visible = true;
                     sakuyaVFX.Play($"CastEffect_{randomVfxIndex}"); 
-                    GD.Print($"🎇 极其华丽地抽中并引爆了特效：CastEffect_{randomVfxIndex} !");
+                    SakuyaGlobals.VerboseLog($"🎇 极其华丽地抽中并引爆了特效：CastEffect_{randomVfxIndex} !");
                 }
                 else
                 {
                     GD.PrintErr("💥 严重事故：全图扫描未发现 'SakuyaVFX' 节点！");
                 }
-                sakuyaMecha.Position = new Vector2(0, 0);
+                sakuyaMecha.Position = Vector2.Zero;
                 break;
             }
             case "Die":
@@ -258,11 +315,11 @@ internal static class NCreature_SetAnimationTrigger_Patch
                 SakuyaGlobals.IsDead = true;
                 sakuyaSprite.Stop();
                 sakuyaSprite.Play("Die");
-                sakuyaMecha.Position = new Vector2(0, 0);
+                sakuyaMecha.Position = Vector2.Zero;
                 break;
             default:
                 sakuyaSprite.Play("Idle");
-                sakuyaMecha.Position = new Vector2(0, 0);
+                sakuyaMecha.Position = Vector2.Zero;
                 break;
         }
     }
@@ -280,13 +337,13 @@ internal static class NCreature_AnimDie_Patch
         var sakuyaMecha = visuals?.GetNodeOrNull<Node2D>("SakuyaMecha");
         if (sakuyaMecha == null) return;
 
-        var sakuyaSprite = SakuyaGlobals.FindFirstNode<AnimatedSprite2D>(sakuyaMecha);
+        var sakuyaSprite = SakuyaCombatNodeCache.GetSprite(sakuyaMecha);
         if (sakuyaSprite == null) return;
 
         SakuyaGlobals.IsDead = true;
         sakuyaSprite.Stop();
         sakuyaSprite.Play("Die");
-        sakuyaMecha.Position = new Vector2(0, 0);
+        sakuyaMecha.Position = Vector2.Zero;
     }
 }
 
@@ -295,7 +352,7 @@ internal static class CombatManager_EndCombatInternal_Patch
 {
     private static void Prefix(object __instance) 
     {
-        GD.Print("\n====== 🏆 侦测到底层宣布战斗结束！通过红魔馆频道呼叫全体女仆！ ======");
+        SakuyaGlobals.VerboseLog("\n====== 🏆 侦测到底层宣布战斗结束！通过红魔馆频道呼叫全体女仆！ ======");
         SakuyaGlobals.ActiveSakuyaSprites.RemoveWhere(s => !GodotObject.IsInstanceValid(s));
 
         if (SakuyaGlobals.ActiveSakuyaSprites.Count <= 0) return;
@@ -333,19 +390,26 @@ internal static class CombatManager_EndCombatInternal_Patch
             }
             else
             {
-                GD.Print("💃 侦测到咲夜正在行礼，极其平滑地跳过重复播放！");
+                SakuyaGlobals.VerboseLog("💃 侦测到咲夜正在行礼，极其平滑地跳过重复播放！");
             }
 
             var mechaNode = sprite.GetParent();
             AudioStreamPlayer2D? voiceNode = null;
             if (mechaNode != null)
             {
-                voiceNode = SakuyaGlobals.FindFirstNode<AudioStreamPlayer2D>(mechaNode, n => n.Name == "SakuyaVoice");
+                if (mechaNode is Node2D mecha2D)
+                {
+                    voiceNode = SakuyaCombatNodeCache.GetVoice(mecha2D);
+                }
+                else
+                {
+                    voiceNode = SakuyaGlobals.FindFirstNode<AudioStreamPlayer2D>(mechaNode, n => n.Name == "SakuyaVoice");
+                }
             }
 
             if (voiceNode != null)
             {
-                voiceNode.Stream = ResourceLoader.Load<AudioStream>(chosenVictoryVoice);
+                voiceNode.Stream = SakuyaGlobals.GetAudioStreamCached(chosenVictoryVoice);
                 voiceNode.Play();
             }
         }
@@ -361,7 +425,7 @@ internal static class CardModel_OnPlayWrapper_Patch
         var entryName = SakuyaGlobals.GetCardEntry(__instance);
         if (entryName == "GRAND_FINALE") 
         {
-            GD.Print("🎯 赛博雷达极其刺耳地警报：侦测到【华丽收场】即将打出！处决动作预热完毕！");
+            SakuyaGlobals.VerboseLog("🎯 赛博雷达极其刺耳地警报：侦测到【华丽收场】即将打出！处决动作预热完毕！");
             SakuyaGlobals.NextAttackIsFinale = true;
         }
     }

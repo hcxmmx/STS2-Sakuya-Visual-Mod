@@ -6,6 +6,16 @@ namespace Hcxmmx.SakuyaMod.Scripts; // ✅ 极其规范的新命名空间
 // 🚨 咲夜专属赛博数据中枢：所有全局状态、常量和弹药库全在这里！
 public static class SakuyaGlobals
 {
+    public enum RuntimeProfile
+    {
+        Release,
+        Debug
+    }
+
+    // 发布前默认保持 Release；本地调试时改为 Debug 即可。
+    public static RuntimeProfile CurrentProfile = RuntimeProfile.Release;
+    public static bool EnableVerboseLogs = false;
+
     // ==========================================
     // 1. 动态状态监视器
     // ==========================================
@@ -73,6 +83,9 @@ public static class SakuyaGlobals
         "res://Hcxmmx_Touhou_Sakuya_Skin/Audio/Vo_shot_ch_sakuya.wav",
         "res://Hcxmmx_Touhou_Sakuya_Skin/Audio/Vo_shot_no_sakuya.wav"
     };
+
+    private static readonly System.Collections.Generic.Dictionary<string, AudioStream> AudioStreamCache =
+        new(System.StringComparer.Ordinal);
     // ==========================================
     // 底层工具方法 (保持不变)
     // ==========================================
@@ -116,5 +129,36 @@ public static class SakuyaGlobals
             var idObj = HarmonyLib.Traverse.Create(card).Property("Id").GetValue() ?? HarmonyLib.Traverse.Create(card).Field("Id").GetValue();
             return HarmonyLib.Traverse.Create(idObj).Property("Entry").GetValue<string>() ?? HarmonyLib.Traverse.Create(idObj).Field("Entry").GetValue<string>();
         } catch { return null; }
+    }
+
+    public static AudioStream? GetAudioStreamCached(string? resourcePath)
+    {
+        if (string.IsNullOrEmpty(resourcePath)) return null;
+
+        if (AudioStreamCache.TryGetValue(resourcePath, out var cached))
+        {
+            return cached;
+        }
+
+        var loaded = ResourceLoader.Load<AudioStream>(resourcePath);
+        if (loaded != null)
+        {
+            AudioStreamCache[resourcePath] = loaded;
+        }
+
+        return loaded;
+    }
+
+    public static void VerboseLog(string message)
+    {
+        if (EnableVerboseLogs)
+        {
+            GD.Print(message);
+        }
+    }
+
+    public static void ApplyRuntimeProfile()
+    {
+        EnableVerboseLogs = CurrentProfile == RuntimeProfile.Debug;
     }
 }
