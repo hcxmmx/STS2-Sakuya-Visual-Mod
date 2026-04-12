@@ -1,0 +1,11 @@
+{
+  "id": "Hcxmmx_Touhou_Sakuya_Skin",
+  "name": "十六夜咲夜 (静默猎手皮肤)",
+  "author": "hcxmmx",
+  "description": "完美潇洒的从者，拥有操纵时间程度的能力。替换静默猎手外观。",
+  "version": "1.0.0",
+  "has_pck": true,
+  "has_dll": true,
+  "dependencies": [],
+  "affects_gameplay": false
+}

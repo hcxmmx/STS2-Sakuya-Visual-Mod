@@ -1,0 +1,244 @@
+[gd_scene load_steps=9 format=3 uid="uid://ci436ltk18bih"]
+
+[ext_resource type="Texture2D" uid="uid://c8v8jrejukfxq" path="res://Hcxmmx_Touhou_Sakuya_Skin/Assets/SakuyaSelectScreen/background (2).png" id="1_g8405"]
+[ext_resource type="Texture2D" uid="uid://bo7juid2r2fds" path="res://Hcxmmx_Touhou_Sakuya_Skin/Assets/Star.png" id="2_da1uv"]
+[ext_resource type="Texture2D" uid="uid://dotuw4bpsa4pk" path="res://Hcxmmx_Touhou_Sakuya_Skin/Assets/SakuyaSelectScreen/sakuya.png" id="2_trspy"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ouakf"]
+blend_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_g8405"]
+blend_mode = 1
+
+[sub_resource type="Animation" id="Animation_g8405"]
+resource_name = "Select_Idle"
+length = 14.0
+loop_mode = 1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("VisualsAnchor/visuals:scale:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1.01, -1.5, -0.0004569292, 1.5, 8.070469e-05, 1, -0.25, 0, 0.25, 0, 1.01, -1.5, -0.0004569292, 1.5, 8.070469e-05, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 3.5, 7, 10.5, 14)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("VisualsAnchor/visuals:scale:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 0.99, -1.5, 0.00018817186, 1.5333333, 0.00027775764, 1, -0.25, 0, 0.25, 0, 0.99, -1.5, 0.00018817186, 1.5333333, 0.00027775764, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 3.5, 7, 10.5, 14)
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("VisualsAnchor/Phantom:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(4.6, 4.9, 5.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.6), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("VisualsAnchor/Phantom:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(4.6, 4.9, 5.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-1400, -500), Vector2(-1375, -500), Vector2(-1400, -500)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ColorRect:color")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(2, 7.1, 10.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(0.007843138, 0, 0.654902, 0), Color(0.007843138, 0, 0.654902, 0.2509804), Color(0.007843138, 0, 0.654902, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CPUParticles2D:speed_scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.0333333, 2, 5.766667, 7.1, 10.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [1.0, 1.0, 0.0, 0.0, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_trspy"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("VisualsAnchor/visuals:scale:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("VisualsAnchor/visuals:scale:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("VisualsAnchor/Phantom:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("VisualsAnchor/Phantom:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1400, -500)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ColorRect:color")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.007843138, 0, 0.654902, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CPUParticles2D:speed_scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_da1uv"]
+_data = {
+&"RESET": SubResource("Animation_trspy"),
+&"Select_Idle": SubResource("Animation_g8405")
+}
+
+[node name="SakuyaSelectScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -17.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_g8405")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+material = SubResource("CanvasItemMaterial_ouakf")
+position = Vector2(1338, 423)
+amount = 80
+texture = ExtResource("2_da1uv")
+lifetime = 8.0
+preprocess = 2.0
+emission_shape = 3
+emission_rect_extents = Vector2(800, 500)
+gravity = Vector2(0, 60)
+scale_amount_min = 0.0
+scale_amount_max = 0.1
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("CanvasItemMaterial_g8405")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.007843138, 0, 0.654902, 0)
+
+[node name="VisualsAnchor" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="Phantom" type="TextureRect" parent="VisualsAnchor"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = -1400.0
+offset_top = -500.0
+offset_right = -282.04468
+offset_bottom = 1105.0
+texture = ExtResource("2_trspy")
+stretch_mode = 5
+
+[node name="visuals" type="TextureRect" parent="VisualsAnchor"]
+layout_mode = 0
+offset_left = -1400.0
+offset_top = -500.0
+offset_right = -282.0
+offset_bottom = 1105.0
+texture = ExtResource("2_trspy")
+stretch_mode = 5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_da1uv")
+}
+autoplay = "Select_Idle"

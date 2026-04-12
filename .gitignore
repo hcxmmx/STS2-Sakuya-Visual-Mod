@@ -1,0 +1,13 @@
+# Godot 4+ specific ignores
+.godot/
+*.translation
+
+# Mono / C# specific ignores
+.mono/
+bin/
+obj/
+*.csproj.user
+
+# OS generated files
+.DS_Store
+Thumbs.db
