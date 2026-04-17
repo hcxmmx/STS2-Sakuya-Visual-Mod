@@ -1,0 +1,1921 @@
+[gd_scene load_steps=375 format=3 uid="uid://cok8s0rmrhq5h"]
+
+[ext_resource type="Texture2D" uid="uid://bn2soa2tmysg3" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_1/001.png" id="1_vjge1"]
+[ext_resource type="Texture2D" uid="uid://bc1vlokqhrwur" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_1/002.png" id="2_qqywj"]
+[ext_resource type="Texture2D" uid="uid://cemb7hl3f3ldx" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_1/003.png" id="3_0m127"]
+[ext_resource type="Texture2D" uid="uid://ds4r7lcfkkwfi" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_1/004.png" id="4_8eghh"]
+[ext_resource type="Texture2D" uid="uid://bv4efunum35r8" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_1/005.png" id="5_06u5f"]
+[ext_resource type="Texture2D" uid="uid://dgp7bdmng0lr6" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_1/006.png" id="6_kbn7v"]
+[ext_resource type="Texture2D" uid="uid://bqvw8ayfbl762" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_1/007.png" id="7_5txuo"]
+[ext_resource type="Texture2D" uid="uid://bhpe0m4knmnuq" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_1/008.png" id="8_n4bq2"]
+[ext_resource type="Texture2D" uid="uid://87tfdlr47r8r" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_1/009.png" id="9_vlgjm"]
+[ext_resource type="Texture2D" uid="uid://drtx6ym58plf" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_2/001.png" id="10_ybx55"]
+[ext_resource type="Texture2D" uid="uid://5hok1eubmif" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_2/002.png" id="11_cff36"]
+[ext_resource type="Texture2D" uid="uid://mnbtp1w05xks" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_2/003.png" id="12_jk3q8"]
+[ext_resource type="Texture2D" uid="uid://c1k5tyw37ib5m" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_2/004.png" id="13_qj4dd"]
+[ext_resource type="Texture2D" uid="uid://c48urqb4grl5k" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_2/005.png" id="14_63dax"]
+[ext_resource type="Texture2D" uid="uid://lenjrn5joy3e" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_2/006.png" id="15_fakgc"]
+[ext_resource type="Texture2D" uid="uid://chke20yo6ui16" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_2/007.png" id="16_26fv7"]
+[ext_resource type="Texture2D" uid="uid://52klhwmferc5" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_2/008.png" id="17_3rmrv"]
+[ext_resource type="Texture2D" uid="uid://cvoad6c8kpcwv" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_2/009.png" id="18_pt4lm"]
+[ext_resource type="Texture2D" uid="uid://dx7oesq0faxl2" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_2/010.png" id="19_uqi4f"]
+[ext_resource type="Texture2D" uid="uid://bk6lfttg68bs4" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_3/001.png" id="20_riain"]
+[ext_resource type="Texture2D" uid="uid://d3g6p6llnfgxk" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_3/002.png" id="21_c02h4"]
+[ext_resource type="Texture2D" uid="uid://dndbum37fwtpx" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_3/003.png" id="22_2iccr"]
+[ext_resource type="Texture2D" uid="uid://b030hwk78edcq" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_3/004.png" id="23_hfd8a"]
+[ext_resource type="Texture2D" uid="uid://dukvdg71ioutk" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_3/005.png" id="24_1o14b"]
+[ext_resource type="Texture2D" uid="uid://mts2jvwl2as3" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_3/006.png" id="25_4enef"]
+[ext_resource type="Texture2D" uid="uid://otktvc2arbm6" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_3/007.png" id="26_chtte"]
+[ext_resource type="Texture2D" uid="uid://b0fn3o8di7x32" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_3/008.png" id="27_tf1lc"]
+[ext_resource type="Texture2D" uid="uid://b58on464u0145" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_3/009.png" id="28_ymht8"]
+[ext_resource type="Texture2D" uid="uid://dflr1twtp2wsu" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_3/010.png" id="29_wvwdu"]
+[ext_resource type="Texture2D" uid="uid://sy130ic73cnx" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_5/001.png" id="30_lalq5"]
+[ext_resource type="Texture2D" uid="uid://d3s4na5hshrdu" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_5/002.png" id="31_21dv1"]
+[ext_resource type="Texture2D" uid="uid://bl4fgxsf8axav" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_5/003.png" id="32_4kubd"]
+[ext_resource type="Texture2D" uid="uid://67cv6pmdidto" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_5/004.png" id="33_1fnv6"]
+[ext_resource type="Texture2D" uid="uid://c7iq58oq5igb2" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_5/005.png" id="34_ki6vh"]
+[ext_resource type="Texture2D" uid="uid://bfg8a5yhojeqd" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_5/006.png" id="35_nhkfv"]
+[ext_resource type="Texture2D" uid="uid://goiycnf4qa00" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_5/007.png" id="36_n0qdc"]
+[ext_resource type="Texture2D" uid="uid://cylg35cu6hkhi" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_5/008.png" id="37_ceona"]
+[ext_resource type="Texture2D" uid="uid://cj80apmjwfbmh" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_5/009.png" id="38_iv2lw"]
+[ext_resource type="Texture2D" uid="uid://dnuk8sdrb7w4c" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_5/010.png" id="39_qy5lx"]
+[ext_resource type="Texture2D" uid="uid://dwcqxyhrh4kg6" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_5/011.png" id="40_yx8oq"]
+[ext_resource type="Texture2D" uid="uid://ctq5u8jotyhr7" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_6/001.png" id="41_46o7v"]
+[ext_resource type="Texture2D" uid="uid://1wy0yojbosmr" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_6/002.png" id="42_y4t7k"]
+[ext_resource type="Texture2D" uid="uid://c5hvw750ldnb0" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_6/003.png" id="43_t1nat"]
+[ext_resource type="Texture2D" uid="uid://00f7v6wvcuo" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_6/004.png" id="44_yqxix"]
+[ext_resource type="Texture2D" uid="uid://c885tsbanjm5g" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_6/005.png" id="45_v0r62"]
+[ext_resource type="Texture2D" uid="uid://lhoth55vfa6e" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_6/006.png" id="46_ipqce"]
+[ext_resource type="Texture2D" uid="uid://c3y2i8iohnv8t" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_6/007.png" id="47_xkalw"]
+[ext_resource type="Texture2D" uid="uid://bk3smy1t7wnub" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_6/008.png" id="48_v4dcs"]
+[ext_resource type="Texture2D" uid="uid://c5d85u3ddqoyh" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_7/001.png" id="49_yvn3g"]
+[ext_resource type="Texture2D" uid="uid://d3s2t2tgs6toe" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_7/002.png" id="50_n4n2e"]
+[ext_resource type="Texture2D" uid="uid://buct1p607q0we" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_7/003.png" id="51_6fqjr"]
+[ext_resource type="Texture2D" uid="uid://1sspj87tiiw4" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_7/004.png" id="52_gf5c3"]
+[ext_resource type="Texture2D" uid="uid://bdslm605uwi2x" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_7/005.png" id="53_c3j7j"]
+[ext_resource type="Texture2D" uid="uid://buagxs0lcxavh" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_7/006.png" id="54_guq4t"]
+[ext_resource type="Texture2D" uid="uid://b71qfv5dxafug" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_7/007.png" id="55_p1xik"]
+[ext_resource type="Texture2D" uid="uid://bf3l0f2m4jear" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_7/008.png" id="56_otkqt"]
+[ext_resource type="Texture2D" uid="uid://cqlilndfm867l" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_7/009.png" id="57_d2r8m"]
+[ext_resource type="Texture2D" uid="uid://d1mpkjcfpcfb6" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_7/010.png" id="58_5vwf5"]
+[ext_resource type="Texture2D" uid="uid://bwr7uxtvxi22h" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Attack_7/011.png" id="59_506gk"]
+[ext_resource type="Texture2D" uid="uid://b7sufq4ycffst" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_1/001.png" id="60_t6rc8"]
+[ext_resource type="Texture2D" uid="uid://tqm70l75uxnf" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_1/002.png" id="61_lyc23"]
+[ext_resource type="Texture2D" uid="uid://131ujn3n2dos" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_1/003.png" id="62_8t2mb"]
+[ext_resource type="Texture2D" uid="uid://lcitmpliodce" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_1/004.png" id="63_qp64e"]
+[ext_resource type="Texture2D" uid="uid://bdrcoduxpdlwk" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_1/005.png" id="64_5tihe"]
+[ext_resource type="Texture2D" uid="uid://cmxommcpm38p" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_1/006.png" id="65_lnf5b"]
+[ext_resource type="Texture2D" uid="uid://buopgf1a57s6g" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_1/007.png" id="66_rv5g2"]
+[ext_resource type="Texture2D" uid="uid://b3fxl7uajbema" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_1/008.png" id="67_4bef3"]
+[ext_resource type="Texture2D" uid="uid://b6euku6ymfsdl" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_1/009.png" id="68_vlvpd"]
+[ext_resource type="Texture2D" uid="uid://e3tl2cy3tv1b" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_1/010.png" id="69_iidli"]
+[ext_resource type="Texture2D" uid="uid://cqvuw0jros0jv" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_1/011.png" id="70_584y8"]
+[ext_resource type="Texture2D" uid="uid://dep0vrjc0xgfb" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_1/012.png" id="71_s2vyw"]
+[ext_resource type="Texture2D" uid="uid://bu0y0l8r3vaur" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_1/013.png" id="72_off4f"]
+[ext_resource type="Texture2D" uid="uid://b7opyrhiggvga" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_1/014.png" id="73_mdrd0"]
+[ext_resource type="Texture2D" uid="uid://cn1gwbtfygnhe" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_1/015.png" id="74_k1quk"]
+[ext_resource type="Texture2D" uid="uid://ds5ll08oh4syk" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_1/016.png" id="75_dimgy"]
+[ext_resource type="Texture2D" uid="uid://bm2vwya3qmuk6" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_1/017.png" id="76_e8tmh"]
+[ext_resource type="Texture2D" uid="uid://8mo62gvvddih" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_1/018.png" id="77_u5rvx"]
+[ext_resource type="Texture2D" uid="uid://bsp5m3u4srkjb" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_1/019.png" id="78_1krde"]
+[ext_resource type="Texture2D" uid="uid://dkxkpoqu8gavy" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_1/020.png" id="79_v103a"]
+[ext_resource type="Texture2D" uid="uid://cl1k7f1t7rie1" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_1/021.png" id="80_8rekn"]
+[ext_resource type="Texture2D" uid="uid://b6d3lvr2wyquq" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_2/001.png" id="81_y7dip"]
+[ext_resource type="Texture2D" uid="uid://dki50i54nwvht" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_2/002.png" id="82_8k7md"]
+[ext_resource type="Texture2D" uid="uid://b84non6g7cobe" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_2/003.png" id="83_fjhyi"]
+[ext_resource type="Texture2D" uid="uid://bl8m8y8tqoo2c" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_2/004.png" id="84_rivl4"]
+[ext_resource type="Texture2D" uid="uid://c87ikl4n5ouyw" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_2/005.png" id="85_dyka8"]
+[ext_resource type="Texture2D" uid="uid://bbjcrqfdpwiud" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_2/006.png" id="86_iw1cw"]
+[ext_resource type="Texture2D" uid="uid://btn1c14a2hve4" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_2/007.png" id="87_fss8a"]
+[ext_resource type="Texture2D" uid="uid://6r02avw5i3ol" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_2/008.png" id="88_3llkv"]
+[ext_resource type="Texture2D" uid="uid://clndxy1cwbvoo" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_2/009.png" id="89_j1ny0"]
+[ext_resource type="Texture2D" uid="uid://bpkcc0lmaot0e" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_2/010.png" id="90_kepkt"]
+[ext_resource type="Texture2D" uid="uid://si1stnne8n8k" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_2/011.png" id="91_gvu34"]
+[ext_resource type="Texture2D" uid="uid://cnxev4p85tlh8" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_2/012.png" id="92_toc1r"]
+[ext_resource type="Texture2D" uid="uid://rq8w3qilvodu" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_2/013.png" id="93_tc1wy"]
+[ext_resource type="Texture2D" uid="uid://c7l87v5uyhgd3" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_2/014.png" id="94_x32iw"]
+[ext_resource type="Texture2D" uid="uid://dbcqp1lvjarm8" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_2/015.png" id="95_wtjgs"]
+[ext_resource type="Texture2D" uid="uid://corldg31aeun0" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_2/016.png" id="96_dguog"]
+[ext_resource type="Texture2D" uid="uid://b1o33q4itdyo" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_3/001.png" id="97_i1mde"]
+[ext_resource type="Texture2D" uid="uid://d2vrdjtf4fblr" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_3/002.png" id="98_nigmm"]
+[ext_resource type="Texture2D" uid="uid://d4ag7wdwhx6b" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_3/003.png" id="99_qxy8l"]
+[ext_resource type="Texture2D" uid="uid://wfej2vedvklt" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_3/004.png" id="100_1sxmk"]
+[ext_resource type="Texture2D" uid="uid://8h7yed8naqte" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_3/005.png" id="101_2e6vv"]
+[ext_resource type="Texture2D" uid="uid://dwedh84h55qok" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_3/006.png" id="102_q81ib"]
+[ext_resource type="Texture2D" uid="uid://bsvq282b0lrr1" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_3/007.png" id="103_6l10x"]
+[ext_resource type="Texture2D" uid="uid://dt2y4lkmnx1rv" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_3/008.png" id="104_k7j6p"]
+[ext_resource type="Texture2D" uid="uid://dvecawsqpmsis" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_3/009.png" id="105_rtrf0"]
+[ext_resource type="Texture2D" uid="uid://bvo8bn7rxywa6" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_3/010.png" id="106_w4nbd"]
+[ext_resource type="Texture2D" uid="uid://oc1klqui52py" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/001.png" id="107_3ytv2"]
+[ext_resource type="Texture2D" uid="uid://562uq1oopk88" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/002.png" id="108_bylqq"]
+[ext_resource type="Texture2D" uid="uid://df4okiqtf0y2y" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/003.png" id="109_jn3qo"]
+[ext_resource type="Texture2D" uid="uid://c8v2uh3ii21d5" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/004.png" id="110_ql0h0"]
+[ext_resource type="Texture2D" uid="uid://cv3hbajknt818" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/005.png" id="111_ffk8w"]
+[ext_resource type="Texture2D" uid="uid://dan65n5jas2km" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/006.png" id="112_151gh"]
+[ext_resource type="Texture2D" uid="uid://bosw8tdahtx7u" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/007.png" id="113_fw88x"]
+[ext_resource type="Texture2D" uid="uid://d0l8ybq5tpqkw" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/008.png" id="114_pexqh"]
+[ext_resource type="Texture2D" uid="uid://bepq5mgiiixj0" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/009.png" id="115_3hgqh"]
+[ext_resource type="Texture2D" uid="uid://4c8so27ckde1" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/010.png" id="116_h6l8b"]
+[ext_resource type="Texture2D" uid="uid://dyx0svvt1q2c5" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/011.png" id="117_cuwdy"]
+[ext_resource type="Texture2D" uid="uid://ddxusecmr6rtp" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/012.png" id="118_a6ndh"]
+[ext_resource type="Texture2D" uid="uid://c2alxy8h7ecn" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/013.png" id="119_45kyt"]
+[ext_resource type="Texture2D" uid="uid://dqg0fy4ag7c4t" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/014.png" id="120_lit4i"]
+[ext_resource type="Texture2D" uid="uid://cbre1jatfltkx" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/015.png" id="121_df8e6"]
+[ext_resource type="Texture2D" uid="uid://db2127ykmfq3n" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/016.png" id="122_sdl2n"]
+[ext_resource type="Texture2D" uid="uid://bguqvc78gxcif" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/017.png" id="123_y1y3x"]
+[ext_resource type="Texture2D" uid="uid://cjlh5j5jp86hw" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/018.png" id="124_d5o0k"]
+[ext_resource type="Texture2D" uid="uid://daefyaq3wjd3t" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/019.png" id="125_c7qv2"]
+[ext_resource type="Texture2D" uid="uid://byd7sdade8day" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/020.png" id="126_nu1sc"]
+[ext_resource type="Texture2D" uid="uid://4b5wajowtjkw" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/021.png" id="127_g1lqo"]
+[ext_resource type="Texture2D" uid="uid://da3iwugcryi8r" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/022.png" id="128_50qvu"]
+[ext_resource type="Texture2D" uid="uid://eglfctsqdxij" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/023.png" id="129_4mb2f"]
+[ext_resource type="Texture2D" uid="uid://4ye3hs52t5bb" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/024.png" id="130_ejf3t"]
+[ext_resource type="Texture2D" uid="uid://bn0t3uiqn5l4q" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/025.png" id="131_p1wqo"]
+[ext_resource type="Texture2D" uid="uid://bi8ur84237cn0" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/026.png" id="132_4vte8"]
+[ext_resource type="Texture2D" uid="uid://63r2ggf2mlqf" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/027.png" id="133_ecgel"]
+[ext_resource type="Texture2D" uid="uid://dbkodoysv0ext" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/028.png" id="134_o46hw"]
+[ext_resource type="Texture2D" uid="uid://bua2tklub6r81" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/029.png" id="135_kl2wa"]
+[ext_resource type="Texture2D" uid="uid://pub7xw277343" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/030.png" id="136_fr65g"]
+[ext_resource type="Texture2D" uid="uid://6wfnatrhlg1k" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/031.png" id="137_cd85p"]
+[ext_resource type="Texture2D" uid="uid://oeolvy1phf6k" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/032.png" id="138_o612l"]
+[ext_resource type="Texture2D" uid="uid://dy2cqux41brdv" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/033.png" id="139_usrqf"]
+[ext_resource type="Texture2D" uid="uid://cignehh1r85ph" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/034.png" id="140_3sny7"]
+[ext_resource type="Texture2D" uid="uid://b6r5ros35im6l" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/035.png" id="141_1mx6s"]
+[ext_resource type="Texture2D" uid="uid://brdls4rgshmb0" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/036.png" id="142_ywpwi"]
+[ext_resource type="Texture2D" uid="uid://yi4wp6cma1rx" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/037.png" id="143_e5jov"]
+[ext_resource type="Texture2D" uid="uid://djfoumhqhg28" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/038.png" id="144_oxo3h"]
+[ext_resource type="Texture2D" uid="uid://6axs2mjb0wp8" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/039.png" id="145_26asy"]
+[ext_resource type="Texture2D" uid="uid://d4fx4vr5q7i54" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/040.png" id="146_7ggqt"]
+[ext_resource type="Texture2D" uid="uid://dcr02gt54h3hb" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/041.png" id="147_wjuum"]
+[ext_resource type="Texture2D" uid="uid://du54a23vfybj0" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/042.png" id="148_eusrp"]
+[ext_resource type="Texture2D" uid="uid://c1ai1uvd3nn0v" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/043.png" id="149_jdhni"]
+[ext_resource type="Texture2D" uid="uid://ei6hytboimkr" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/044.png" id="150_5gxy1"]
+[ext_resource type="Texture2D" uid="uid://ukgqmbhri8pj" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/045.png" id="151_biwq3"]
+[ext_resource type="Texture2D" uid="uid://blrop0dql15q" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/046.png" id="152_rtuk6"]
+[ext_resource type="Texture2D" uid="uid://bt2as3nr7kf02" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/047.png" id="153_ye7fk"]
+[ext_resource type="Texture2D" uid="uid://c4k7ovw040cye" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/048.png" id="154_ru0we"]
+[ext_resource type="Texture2D" uid="uid://bxwd5x0cidx6w" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_4/049.png" id="155_00vf5"]
+[ext_resource type="Texture2D" uid="uid://8l4wk8yim8oy" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_5/001.png" id="156_t4g1u"]
+[ext_resource type="Texture2D" uid="uid://dph1er0kj4qei" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_5/002.png" id="157_lg11y"]
+[ext_resource type="Texture2D" uid="uid://jbskyac7dn17" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_5/003.png" id="158_iv73d"]
+[ext_resource type="Texture2D" uid="uid://dvmloh86r2o5h" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_5/004.png" id="159_spmgu"]
+[ext_resource type="Texture2D" uid="uid://qbvr5y4b8h7l" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_5/005.png" id="160_y3vty"]
+[ext_resource type="Texture2D" uid="uid://b3gw8ye8srs4n" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_5/006.png" id="161_ywd1v"]
+[ext_resource type="Texture2D" uid="uid://pc0jc51hlo4i" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_5/007.png" id="162_h1yyg"]
+[ext_resource type="Texture2D" uid="uid://j2op38enhoma" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_5/008.png" id="163_d6am6"]
+[ext_resource type="Texture2D" uid="uid://cub86o6a25sx8" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_5/009.png" id="164_d1m5t"]
+[ext_resource type="Texture2D" uid="uid://cqhl3pkdw0kbl" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_5/010.png" id="165_i7fxu"]
+[ext_resource type="Texture2D" uid="uid://b4t2y4yyjuoig" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_5/011.png" id="166_uboqu"]
+[ext_resource type="Texture2D" uid="uid://b0bo34t2jor81" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_5/012.png" id="167_58a4r"]
+[ext_resource type="Texture2D" uid="uid://djb8thtxg02im" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_5/013.png" id="168_ps65c"]
+[ext_resource type="Texture2D" uid="uid://b2enxygg7mtjj" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_5/014.png" id="169_g2afe"]
+[ext_resource type="Texture2D" uid="uid://ctbpund7812n5" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_5/015.png" id="170_f0d2p"]
+[ext_resource type="Texture2D" uid="uid://fuu4oc4dgjot" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_5/016.png" id="171_vkygo"]
+[ext_resource type="Texture2D" uid="uid://lohxgeoijqd8" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_5/017.png" id="172_sntb0"]
+[ext_resource type="Texture2D" uid="uid://1lu6j3wfjkmi" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_5/018.png" id="173_qiswt"]
+[ext_resource type="Texture2D" uid="uid://dkr4vn1gntcb0" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_5/019.png" id="174_3jutg"]
+[ext_resource type="Texture2D" uid="uid://y2ccul6yux5g" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_5/020.png" id="175_14ga7"]
+[ext_resource type="Texture2D" uid="uid://du1ol0m11kphn" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_5/021.png" id="176_xea2q"]
+[ext_resource type="Texture2D" uid="uid://ffiv4m0co46o" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_5/022.png" id="177_yi3gh"]
+[ext_resource type="Texture2D" uid="uid://dl6ax7vtavywv" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_5/023.png" id="178_sdmgb"]
+[ext_resource type="Texture2D" uid="uid://dpl76fonl7q1q" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Cast_5/024.png" id="179_1docb"]
+[ext_resource type="Texture2D" uid="uid://bkqljtwen7wvu" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Die/0001.png" id="180_7hqed"]
+[ext_resource type="Texture2D" uid="uid://b8qqp4qmy7a18" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Die/001.png" id="181_a7x10"]
+[ext_resource type="Texture2D" uid="uid://bccd3wmp6b8qt" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Die/0002.png" id="182_f555y"]
+[ext_resource type="Texture2D" uid="uid://dljue3gl121co" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Die/002.png" id="183_tw6ap"]
+[ext_resource type="Texture2D" uid="uid://dd5y4abf85tq4" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Die/003.png" id="184_8c2g8"]
+[ext_resource type="Texture2D" uid="uid://dcumngnd5tgjj" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Die/004.png" id="185_ugqd1"]
+[ext_resource type="Texture2D" uid="uid://8k14rb0rslpr" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Die/005.png" id="186_uc8mw"]
+[ext_resource type="Texture2D" uid="uid://doww4eo216udw" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Die/006.png" id="187_sh53t"]
+[ext_resource type="Texture2D" uid="uid://b0siqp3vmag0f" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Die/007.png" id="188_dh3f5"]
+[ext_resource type="Texture2D" uid="uid://dyqpfdow7wwhd" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Die/008.png" id="189_tagxm"]
+[ext_resource type="Texture2D" uid="uid://cwxobmgjinr7k" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Die/009.png" id="190_m5352"]
+[ext_resource type="Texture2D" uid="uid://dboqlri8nstqh" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Die/010.png" id="191_kaho3"]
+[ext_resource type="Texture2D" uid="uid://cv3vr6w6t23do" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Die/011.png" id="192_kdnnx"]
+[ext_resource type="Texture2D" uid="uid://clbuvxtuaxbun" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Die/012.png" id="193_jygbc"]
+[ext_resource type="Texture2D" uid="uid://rclvnrv6wrn8" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Die/013.png" id="194_1yiuh"]
+[ext_resource type="Texture2D" uid="uid://03t20ml7nv6h" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Die/014.png" id="195_ylgav"]
+[ext_resource type="Texture2D" uid="uid://cli6dy4fayq25" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Hit_1/001.png" id="196_oml5v"]
+[ext_resource type="Texture2D" uid="uid://bsd0e7gtdpsxm" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Hit_1/002.png" id="197_4i4i4"]
+[ext_resource type="Texture2D" uid="uid://c5s1ueaudxr7m" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Hit_1/003.png" id="198_s7004"]
+[ext_resource type="Texture2D" uid="uid://3qrq332udjxb" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Hit_1/004.png" id="199_xivfv"]
+[ext_resource type="Texture2D" uid="uid://bnmcgumjqcjxl" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Hit_2/001.png" id="200_ufrst"]
+[ext_resource type="Texture2D" uid="uid://conyqqp3ixu84" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Hit_2/002.png" id="201_85gdh"]
+[ext_resource type="Texture2D" uid="uid://856cl022f7ax" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Hit_2/003.png" id="202_foxv3"]
+[ext_resource type="Texture2D" uid="uid://c3kbq7ngftmhp" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Hit_2/004.png" id="203_kaugm"]
+[ext_resource type="Texture2D" uid="uid://cghe3buqiakuo" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Hit_3/001.png" id="204_v46rn"]
+[ext_resource type="Texture2D" uid="uid://c3mmbclabjok2" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Hit_3/002.png" id="205_eaa75"]
+[ext_resource type="Texture2D" uid="uid://p18xw7mytemj" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Hit_3/003.png" id="206_rmix4"]
+[ext_resource type="Texture2D" uid="uid://dywhj3024cxfj" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Idle_2/001.png" id="207_faoo8"]
+[ext_resource type="Texture2D" uid="uid://dawopxttghl4p" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Idle_2/002.png" id="208_oy773"]
+[ext_resource type="Texture2D" uid="uid://cbpdhd2ey2wwr" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Idle_2/003.png" id="209_nigul"]
+[ext_resource type="Texture2D" uid="uid://dto0rsnyhr5m7" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Idle_2/004.png" id="210_ylkac"]
+[ext_resource type="Texture2D" uid="uid://3y8666ho545y" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Idle_2/005.png" id="211_xakjf"]
+[ext_resource type="Texture2D" uid="uid://n6ok2hhl8g5i" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Idle_2/006.png" id="212_v8u6r"]
+[ext_resource type="Texture2D" uid="uid://b0qtqeav2ybcp" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/001.png" id="213_n3ecg"]
+[ext_resource type="Texture2D" uid="uid://cun6sbmybj3ki" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/002.png" id="214_6mclx"]
+[ext_resource type="Texture2D" uid="uid://nhwcyd81td5k" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/003.png" id="215_iax2l"]
+[ext_resource type="Texture2D" uid="uid://bj6tvai0i1rcb" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/004.png" id="216_t8t6j"]
+[ext_resource type="Texture2D" uid="uid://cgmedyqkepnrk" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/005.png" id="217_i488j"]
+[ext_resource type="Texture2D" uid="uid://ttxmuxcqsae1" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/006.png" id="218_o8vo6"]
+[ext_resource type="Texture2D" uid="uid://d172ucc16o70n" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/007.png" id="219_j6r0j"]
+[ext_resource type="Texture2D" uid="uid://68kmmpke3eg" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/008.png" id="220_s175u"]
+[ext_resource type="Texture2D" uid="uid://bnaf2frnasctq" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/009.png" id="221_2du7h"]
+[ext_resource type="Texture2D" uid="uid://dya4k30pqcjac" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/010.png" id="222_pgvjx"]
+[ext_resource type="Texture2D" uid="uid://dafsw1moue5sh" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/011.png" id="223_ceib2"]
+[ext_resource type="Texture2D" uid="uid://dpqhghhe4ekjf" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/012.png" id="224_6qakx"]
+[ext_resource type="Texture2D" uid="uid://c4f8mcx8pbnwa" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/013.png" id="225_v1ddm"]
+[ext_resource type="Texture2D" uid="uid://8ve668vuvhv7" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/014.png" id="226_marnr"]
+[ext_resource type="Texture2D" uid="uid://t4yrn76vretv" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/015.png" id="227_5wor3"]
+[ext_resource type="Texture2D" uid="uid://dop8g7ghjd6oe" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/016.png" id="228_4ely8"]
+[ext_resource type="Texture2D" uid="uid://cdkdjywvbx7bk" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/017.png" id="229_cax4c"]
+[ext_resource type="Texture2D" uid="uid://ipi3kw26gmso" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/018.png" id="230_4hnfl"]
+[ext_resource type="Texture2D" uid="uid://bc8827pxqxhhj" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/019.png" id="231_nudes"]
+[ext_resource type="Texture2D" uid="uid://tmtf0ccryowd" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/020.png" id="232_17jal"]
+[ext_resource type="Texture2D" uid="uid://cx85ub670ohh1" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/021.png" id="233_c76cf"]
+[ext_resource type="Texture2D" uid="uid://dilmhiv7rv7pl" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/022.png" id="234_k2q5p"]
+[ext_resource type="Texture2D" uid="uid://dyvmouxw4w5vw" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/023.png" id="235_rawqc"]
+[ext_resource type="Texture2D" uid="uid://w3om4hmgofl3" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/024.png" id="236_lra4f"]
+[ext_resource type="Texture2D" uid="uid://b7qecc8awvvuv" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/025.png" id="237_hbfce"]
+[ext_resource type="Texture2D" uid="uid://cfpjeyawtewjj" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/026.png" id="238_s1a8q"]
+[ext_resource type="Texture2D" uid="uid://bupklant4hdqk" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/027.png" id="239_es4us"]
+[ext_resource type="Texture2D" uid="uid://bey47o3hp4sql" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/028.png" id="240_ifar1"]
+[ext_resource type="Texture2D" uid="uid://bouy0e1u6shg8" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/029.png" id="241_66jii"]
+[ext_resource type="Texture2D" uid="uid://bqw5omi4nkpxf" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/030.png" id="242_d0hvp"]
+[ext_resource type="Texture2D" uid="uid://4paatku06bdn" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/031.png" id="243_o1atn"]
+[ext_resource type="Texture2D" uid="uid://befrkr0bx0eph" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/032.png" id="244_sdehi"]
+[ext_resource type="Texture2D" uid="uid://bcngp8pqaejwg" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/033.png" id="245_h7qbi"]
+[ext_resource type="Texture2D" uid="uid://ckuwmp1hmfr04" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/034.png" id="246_g8l5p"]
+[ext_resource type="Texture2D" uid="uid://ywn21s8y8088" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/035.png" id="247_28tdy"]
+[ext_resource type="Texture2D" uid="uid://e6unpq537e8q" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/036.png" id="248_uiw4v"]
+[ext_resource type="Texture2D" uid="uid://b5kdrp6oomk7i" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/037.png" id="249_v62o8"]
+[ext_resource type="Texture2D" uid="uid://bbxi40a7dovfv" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/038.png" id="250_ta00g"]
+[ext_resource type="Texture2D" uid="uid://8gox788caq16" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/039.png" id="251_5c720"]
+[ext_resource type="Texture2D" uid="uid://dij6qn426egbh" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/040.png" id="252_4lgpx"]
+[ext_resource type="Texture2D" uid="uid://c0nahkpuepryx" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/041.png" id="253_2pygl"]
+[ext_resource type="Texture2D" uid="uid://bw1yboinhbeds" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/042.png" id="254_ga3vx"]
+[ext_resource type="Texture2D" uid="uid://di8wrno7kmwtg" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/043.png" id="255_ar0t2"]
+[ext_resource type="Texture2D" uid="uid://c6lky5p2qx376" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/044.png" id="256_jwfxj"]
+[ext_resource type="Texture2D" uid="uid://v337l12ffnis" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/045.png" id="257_rg07x"]
+[ext_resource type="Texture2D" uid="uid://d18unkdelvfqy" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/046.png" id="258_i10u8"]
+[ext_resource type="Texture2D" uid="uid://jr36yfkvcv7u" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/047.png" id="259_jmdyx"]
+[ext_resource type="Texture2D" uid="uid://c7abqkp7s3pxr" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/048.png" id="260_kdgqv"]
+[ext_resource type="Texture2D" uid="uid://c5okxnkfd4iyw" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/049.png" id="261_exmtb"]
+[ext_resource type="Texture2D" uid="uid://dyra5w6qj0xol" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/050.png" id="262_pq4ay"]
+[ext_resource type="Texture2D" uid="uid://dciay40xlglif" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/051.png" id="263_1gd4r"]
+[ext_resource type="Texture2D" uid="uid://b0nxqmcjmp0x0" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/052.png" id="264_lk437"]
+[ext_resource type="Texture2D" uid="uid://cppj7w3n8tk6k" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/053.png" id="265_7jh12"]
+[ext_resource type="Texture2D" uid="uid://cexbd5swbjejf" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/054.png" id="266_j4wuk"]
+[ext_resource type="Texture2D" uid="uid://b5344rikwqwj8" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/055.png" id="267_8puuy"]
+[ext_resource type="Texture2D" uid="uid://b8rd2sjnbmidh" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/056.png" id="268_io1a8"]
+[ext_resource type="Texture2D" uid="uid://c0cqfkftobtql" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/057.png" id="269_xpt3i"]
+[ext_resource type="Texture2D" uid="uid://fe5m7f6df3hk" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/058.png" id="270_1a2wt"]
+[ext_resource type="Texture2D" uid="uid://csqmorljajapk" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/059.png" id="271_nphq5"]
+[ext_resource type="Texture2D" uid="uid://bhc3r5ptg5yjy" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/060.png" id="272_cmeid"]
+[ext_resource type="Texture2D" uid="uid://cas173tnylaqs" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/061.png" id="273_j7u8n"]
+[ext_resource type="Texture2D" uid="uid://dfctynx0kc6wj" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/062.png" id="274_ett8a"]
+[ext_resource type="Texture2D" uid="uid://dojdnotjl7nog" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/063.png" id="275_5rryy"]
+[ext_resource type="Texture2D" uid="uid://du10mx7lgd38t" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Intro/064.png" id="276_pvxgh"]
+[ext_resource type="Texture2D" uid="uid://d2y0d8wp2jmpb" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_1/001.png" id="277_25ukf"]
+[ext_resource type="Texture2D" uid="uid://bqyp664fsqlqa" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_1/002.png" id="278_vhksn"]
+[ext_resource type="Texture2D" uid="uid://cd7xmre0x6w4s" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_1/003.png" id="279_vblas"]
+[ext_resource type="Texture2D" uid="uid://cq8qulw3hxuyj" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_1/004.png" id="280_y66b2"]
+[ext_resource type="Texture2D" uid="uid://bu4edd41ws8cr" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_1/005.png" id="281_ynbqt"]
+[ext_resource type="Texture2D" uid="uid://1fiota3qt38k" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_1/006.png" id="282_wv0ky"]
+[ext_resource type="Texture2D" uid="uid://b1m0btvbs0l6d" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_1/007.png" id="283_rxx1i"]
+[ext_resource type="Texture2D" uid="uid://d2lrv153uo171" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_1/008.png" id="284_vu2ev"]
+[ext_resource type="Texture2D" uid="uid://mv3ulhhev3b" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_1/009.png" id="285_6e0eo"]
+[ext_resource type="Texture2D" uid="uid://beayesjl3mcyp" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_1/010.png" id="286_xwujr"]
+[ext_resource type="Texture2D" uid="uid://c2ydpb8nhtufo" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_2/001.png" id="287_dlhqy"]
+[ext_resource type="Texture2D" uid="uid://c13tf303gq1rm" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_2/002.png" id="288_82hx0"]
+[ext_resource type="Texture2D" uid="uid://c3i3bv1nilr8f" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_2/003.png" id="289_fury7"]
+[ext_resource type="Texture2D" uid="uid://bg15m26h4dniw" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_2/004.png" id="290_bapmu"]
+[ext_resource type="Texture2D" uid="uid://cel3fm0jmlg4s" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_2/005.png" id="291_rtbom"]
+[ext_resource type="Texture2D" uid="uid://b3sqsj0oig37a" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_2/006.png" id="292_0nb2q"]
+[ext_resource type="Texture2D" uid="uid://7r47mjsud3l1" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_2/007.png" id="293_b2d4e"]
+[ext_resource type="Texture2D" uid="uid://c6txqrk6rxgin" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_2/008.png" id="294_4al5o"]
+[ext_resource type="Texture2D" uid="uid://c2hqsc6spmamj" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_3/001.png" id="295_wm2r1"]
+[ext_resource type="Texture2D" uid="uid://lt5k04jmsw5g" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_3/002.png" id="296_a8wdq"]
+[ext_resource type="Texture2D" uid="uid://cu0d0kx4ba5cp" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_3/003.png" id="297_sai3b"]
+[ext_resource type="Texture2D" uid="uid://dok6ue03y5s44" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_3/004.png" id="298_uw3su"]
+[ext_resource type="Texture2D" uid="uid://hnqgoyihxhiy" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_3/005.png" id="299_04lww"]
+[ext_resource type="Texture2D" uid="uid://bnfqq25c48efy" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_3/006.png" id="300_m4j85"]
+[ext_resource type="Texture2D" uid="uid://622482jy7x8t" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_3/007.png" id="301_non1t"]
+[ext_resource type="Texture2D" uid="uid://cq8kwjlchj408" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_3/008.png" id="302_u8xll"]
+[ext_resource type="Texture2D" uid="uid://c785cg6u7j537" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_3/009.png" id="303_pihim"]
+[ext_resource type="Texture2D" uid="uid://0wcbv3ti65xr" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_3/010.png" id="304_jnqxd"]
+[ext_resource type="Texture2D" uid="uid://cyq52rvu4oqk4" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Shiv_3/011.png" id="305_xtmav"]
+[ext_resource type="Texture2D" uid="uid://bvv7o5maj8vnu" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Victory/001.png" id="306_xehcs"]
+[ext_resource type="Texture2D" uid="uid://b664vyr6dpeb5" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Victory/002.png" id="307_a6m6w"]
+[ext_resource type="Texture2D" uid="uid://ctqgacaf2l34" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Victory/003.png" id="308_iiaot"]
+[ext_resource type="Texture2D" uid="uid://36imiisac2hc" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Victory/004.png" id="309_gf2fi"]
+[ext_resource type="Texture2D" uid="uid://khqconmjv0oi" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Victory/005.png" id="310_61dj5"]
+[ext_resource type="Texture2D" uid="uid://di0qlu0abn50f" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Victory/006.png" id="311_jsyfm"]
+[ext_resource type="Texture2D" uid="uid://75q17pjnqplf" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Victory/007.png" id="312_ka34j"]
+[ext_resource type="Texture2D" uid="uid://baoh6dyv8ca03" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Victory/008.png" id="313_xwuyg"]
+[ext_resource type="Texture2D" uid="uid://bxts38jtksneu" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Victory/009.png" id="314_sbc32"]
+[ext_resource type="Texture2D" uid="uid://b8jps8x101jrs" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Animations/Victory/010.png" id="315_gl7ei"]
+[ext_resource type="Texture2D" uid="uid://dpgq3dxhtd0jc" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Shop/002.png" id="316_71wj1"]
+[ext_resource type="Texture2D" uid="uid://4l63u4pl56q1" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Shop/001.png" id="317_cgd52"]
+[ext_resource type="Texture2D" uid="uid://c42cawws56e7e" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Shop/003.png" id="318_fv35k"]
+[ext_resource type="Texture2D" uid="uid://53xqdvacts3l" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Shop/004.png" id="319_75m7x"]
+[ext_resource type="Texture2D" uid="uid://dllivdbumrewd" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Shop/005.png" id="320_jyto1"]
+[ext_resource type="Texture2D" uid="uid://ctyqsgj3pp6c4" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Shop/006.png" id="321_see5b"]
+[ext_resource type="Texture2D" uid="uid://d0wq46sjhrmvc" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/CompanionSprite/001.png" id="322_avujo"]
+[ext_resource type="Texture2D" uid="uid://btlilwcgiyibf" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/CompanionSprite/002.png" id="323_m8sfs"]
+[ext_resource type="Texture2D" uid="uid://dq7usqbdmq2nc" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/001/001.png" id="324_10sau"]
+[ext_resource type="Texture2D" uid="uid://dsy0yweyl2u81" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/001/002.png" id="325_46qgt"]
+[ext_resource type="Texture2D" uid="uid://cepg4tnpv4egh" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/001/003.png" id="326_vaiit"]
+[ext_resource type="Texture2D" uid="uid://ccey7iqcmjotp" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/001/004.png" id="327_ddj6f"]
+[ext_resource type="Texture2D" uid="uid://3mcnop8b7fjx" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/001/005.png" id="328_1n0mr"]
+[ext_resource type="Texture2D" uid="uid://v28uqt2koj78" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/001/006.png" id="329_w36ea"]
+[ext_resource type="Texture2D" uid="uid://dyxqf5c7uqlus" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/002/001.png" id="330_57p0s"]
+[ext_resource type="Texture2D" uid="uid://bijw3ys7bc64h" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/002/002.png" id="331_7cx00"]
+[ext_resource type="Texture2D" uid="uid://djqes45k24dth" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/002/003.png" id="332_py0se"]
+[ext_resource type="Texture2D" uid="uid://bjceyty48mjgr" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/002/004.png" id="333_qidai"]
+[ext_resource type="Texture2D" uid="uid://5onyplfs8fxe" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/002/005.png" id="334_tj3c8"]
+[ext_resource type="Texture2D" uid="uid://dxt8rw2fp1j3p" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/002/006.png" id="335_7u54w"]
+[ext_resource type="Texture2D" uid="uid://cy6exqehe8mf8" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/002/007.png" id="336_3bd4i"]
+[ext_resource type="Texture2D" uid="uid://dlb2wyytoni4p" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/002/008.png" id="337_544ef"]
+[ext_resource type="Texture2D" uid="uid://7ej8b0lf3iwh" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/002/009.png" id="338_n6yia"]
+[ext_resource type="Texture2D" uid="uid://dlmgejk1b68j6" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/002/010.png" id="339_sbksq"]
+[ext_resource type="Texture2D" uid="uid://cfc57c576d2mm" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/002/011.png" id="340_bmh30"]
+[ext_resource type="Texture2D" uid="uid://7pve2yw2bfmo" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/002/012.png" id="341_x1mli"]
+[ext_resource type="Texture2D" uid="uid://cxsx385r2wes8" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/001_1/001.png" id="342_63ryt"]
+[ext_resource type="Texture2D" uid="uid://dj28tpbd8myf1" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/001_1/002.png" id="343_0oro4"]
+[ext_resource type="Texture2D" uid="uid://cp4ymlxl27e57" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/001_1/003.png" id="344_4vhuw"]
+[ext_resource type="Texture2D" uid="uid://cauxtcfmw6ukn" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/001_1/004.png" id="345_bvj2q"]
+[ext_resource type="Texture2D" uid="uid://c577b2w8d813h" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/001_1/005.png" id="346_5w4at"]
+[ext_resource type="Texture2D" uid="uid://8tt6gkrih3ob" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/001_1/006.png" id="347_12o6o"]
+[ext_resource type="Texture2D" uid="uid://vtkh06i0lvfs" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/003/001.png" id="348_sqij4"]
+[ext_resource type="Texture2D" uid="uid://c6kh5m82avnys" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/003/002.png" id="349_24h2t"]
+[ext_resource type="Texture2D" uid="uid://bod2mtqaovcdt" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/003/003.png" id="350_1o56b"]
+[ext_resource type="Texture2D" uid="uid://d25qut1poagsd" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/003/004.png" id="351_3p5hb"]
+[ext_resource type="Texture2D" uid="uid://dah8q8qek4w7o" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/003/005.png" id="352_8536d"]
+[ext_resource type="Texture2D" uid="uid://v52ytdsnreum" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/003/006.png" id="353_kifqw"]
+[ext_resource type="Texture2D" uid="uid://bwlcvm4mnqd1n" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/003/007.png" id="354_jfr65"]
+[ext_resource type="Texture2D" uid="uid://ome21wpt06ue" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/003/008.png" id="355_qt6v2"]
+[ext_resource type="Texture2D" uid="uid://bgr5eeramv7wc" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/003/009.png" id="356_ncumg"]
+[ext_resource type="Texture2D" uid="uid://dyjg08qkrujd6" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/003/010.png" id="357_af0yu"]
+[ext_resource type="Texture2D" uid="uid://d2cbvm6m8p02" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/004/001.png" id="358_xqspv"]
+[ext_resource type="Texture2D" uid="uid://1qbveiyorwpr" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/004/002.png" id="359_65q53"]
+[ext_resource type="Texture2D" uid="uid://2lgqoyocus10" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/004/003.png" id="360_ovwbg"]
+[ext_resource type="Texture2D" uid="uid://b378cadg3xqsb" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/004/004.png" id="361_ixgjd"]
+[ext_resource type="Texture2D" uid="uid://dvmo2r66w3bt8" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/004/005.png" id="362_85l5o"]
+[ext_resource type="Texture2D" uid="uid://btqwn8lu1wd4r" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/004/006.png" id="363_f8ssd"]
+[ext_resource type="Texture2D" uid="uid://cwdi4b8xjpx7g" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/004/007.png" id="364_ikvkd"]
+[ext_resource type="Texture2D" uid="uid://bp42ph2jlugfu" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/004/008.png" id="365_xnohk"]
+[ext_resource type="Texture2D" uid="uid://bcyvhvroj6e0y" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/004/009.png" id="366_2yicy"]
+[ext_resource type="Texture2D" uid="uid://duosd10jyxgpf" path="res://mods/Hcxmmx_Touhou_Sakuya_Skin/Assets/Effect/004/010.png" id="367_cuu6p"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sn4eb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_vjge1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qqywj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_0m127")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8eghh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_06u5f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_kbn7v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5txuo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_n4bq2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_vlgjm")
+}],
+"loop": false,
+"name": &"Attack_1",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_ybx55")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_cff36")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_jk3q8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_qj4dd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_63dax")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_fakgc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_26fv7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_3rmrv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_pt4lm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_uqi4f")
+}],
+"loop": false,
+"name": &"Attack_2",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_riain")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_c02h4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_2iccr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_hfd8a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_1o14b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_4enef")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_chtte")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_tf1lc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_ymht8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_wvwdu")
+}],
+"loop": false,
+"name": &"Attack_3",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("30_lalq5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_21dv1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_4kubd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_1fnv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_ki6vh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_nhkfv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_n0qdc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_ceona")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_iv2lw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_qy5lx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_yx8oq")
+}],
+"loop": false,
+"name": &"Attack_5",
+"speed": 18.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("41_46o7v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_y4t7k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_t1nat")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_yqxix")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_v0r62")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_ipqce")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_xkalw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_v4dcs")
+}],
+"loop": false,
+"name": &"Attack_6",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("49_yvn3g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_n4n2e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_6fqjr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_gf5c3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_c3j7j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_guq4t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_p1xik")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_otkqt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_d2r8m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_5vwf5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_506gk")
+}],
+"loop": false,
+"name": &"Attack_7",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("60_t6rc8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_lyc23")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_8t2mb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_qp64e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_5tihe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_lnf5b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_rv5g2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_4bef3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_vlvpd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_iidli")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_584y8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_s2vyw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_off4f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_mdrd0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_k1quk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_dimgy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_e8tmh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_u5rvx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_1krde")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_v103a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_8rekn")
+}],
+"loop": false,
+"name": &"Cast_1",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("81_y7dip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_8k7md")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_fjhyi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_rivl4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_dyka8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_iw1cw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_fss8a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_3llkv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_j1ny0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_kepkt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_gvu34")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_toc1r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_tc1wy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_x32iw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_wtjgs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_dguog")
+}],
+"loop": false,
+"name": &"Cast_2",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("97_i1mde")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_nigmm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_qxy8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_1sxmk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_2e6vv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_q81ib")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_6l10x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_k7j6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_rtrf0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_i1mde")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_nigmm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_qxy8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_1sxmk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_2e6vv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_q81ib")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_6l10x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_k7j6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_rtrf0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_w4nbd")
+}],
+"loop": false,
+"name": &"Cast_3",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("107_3ytv2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_bylqq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_jn3qo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_ql0h0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_ffk8w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_151gh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_fw88x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_pexqh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_3hgqh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_h6l8b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_cuwdy")
+}, {
+"duration": 0.5,
+"texture": ExtResource("118_a6ndh")
+}, {
+"duration": 0.5,
+"texture": ExtResource("119_45kyt")
+}, {
+"duration": 0.5,
+"texture": ExtResource("120_lit4i")
+}, {
+"duration": 0.5,
+"texture": ExtResource("121_df8e6")
+}, {
+"duration": 0.5,
+"texture": ExtResource("122_sdl2n")
+}, {
+"duration": 0.5,
+"texture": ExtResource("123_y1y3x")
+}, {
+"duration": 0.5,
+"texture": ExtResource("124_d5o0k")
+}, {
+"duration": 0.5,
+"texture": ExtResource("125_c7qv2")
+}, {
+"duration": 0.5,
+"texture": ExtResource("126_nu1sc")
+}, {
+"duration": 0.5,
+"texture": ExtResource("127_g1lqo")
+}, {
+"duration": 0.5,
+"texture": ExtResource("128_50qvu")
+}, {
+"duration": 0.5,
+"texture": ExtResource("129_4mb2f")
+}, {
+"duration": 0.5,
+"texture": ExtResource("130_ejf3t")
+}, {
+"duration": 0.5,
+"texture": ExtResource("131_p1wqo")
+}, {
+"duration": 0.5,
+"texture": ExtResource("132_4vte8")
+}, {
+"duration": 0.5,
+"texture": ExtResource("133_ecgel")
+}, {
+"duration": 0.5,
+"texture": ExtResource("134_o46hw")
+}, {
+"duration": 0.5,
+"texture": ExtResource("135_kl2wa")
+}, {
+"duration": 0.5,
+"texture": ExtResource("136_fr65g")
+}, {
+"duration": 0.5,
+"texture": ExtResource("137_cd85p")
+}, {
+"duration": 0.5,
+"texture": ExtResource("138_o612l")
+}, {
+"duration": 0.5,
+"texture": ExtResource("139_usrqf")
+}, {
+"duration": 0.5,
+"texture": ExtResource("140_3sny7")
+}, {
+"duration": 0.5,
+"texture": ExtResource("141_1mx6s")
+}, {
+"duration": 0.5,
+"texture": ExtResource("142_ywpwi")
+}, {
+"duration": 0.5,
+"texture": ExtResource("143_e5jov")
+}, {
+"duration": 0.5,
+"texture": ExtResource("144_oxo3h")
+}, {
+"duration": 0.5,
+"texture": ExtResource("145_26asy")
+}, {
+"duration": 0.5,
+"texture": ExtResource("146_7ggqt")
+}, {
+"duration": 0.5,
+"texture": ExtResource("147_wjuum")
+}, {
+"duration": 0.5,
+"texture": ExtResource("148_eusrp")
+}, {
+"duration": 0.5,
+"texture": ExtResource("149_jdhni")
+}, {
+"duration": 0.5,
+"texture": ExtResource("150_5gxy1")
+}, {
+"duration": 0.5,
+"texture": ExtResource("151_biwq3")
+}, {
+"duration": 0.5,
+"texture": ExtResource("152_rtuk6")
+}, {
+"duration": 0.5,
+"texture": ExtResource("153_ye7fk")
+}, {
+"duration": 0.5,
+"texture": ExtResource("154_ru0we")
+}, {
+"duration": 0.5,
+"texture": ExtResource("155_00vf5")
+}],
+"loop": false,
+"name": &"Cast_4",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("156_t4g1u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("157_lg11y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("158_iv73d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("159_spmgu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("160_y3vty")
+}, {
+"duration": 1.0,
+"texture": ExtResource("161_ywd1v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("162_h1yyg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("163_d6am6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("164_d1m5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("165_i7fxu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("166_uboqu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("167_58a4r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("168_ps65c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("169_g2afe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("170_f0d2p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("171_vkygo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("172_sntb0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("173_qiswt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("174_3jutg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("175_14ga7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("176_xea2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("177_yi3gh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("178_sdmgb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("179_1docb")
+}],
+"loop": false,
+"name": &"Cast_5",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("180_7hqed")
+}, {
+"duration": 1.0,
+"texture": ExtResource("181_a7x10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("182_f555y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("183_tw6ap")
+}, {
+"duration": 1.0,
+"texture": ExtResource("184_8c2g8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("185_ugqd1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("186_uc8mw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("187_sh53t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("188_dh3f5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("189_tagxm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("190_m5352")
+}, {
+"duration": 1.0,
+"texture": ExtResource("191_kaho3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("192_kdnnx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("193_jygbc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("194_1yiuh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("195_ylgav")
+}],
+"loop": false,
+"name": &"Die",
+"speed": 18.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("196_oml5v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("197_4i4i4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("198_s7004")
+}, {
+"duration": 1.0,
+"texture": ExtResource("199_xivfv")
+}],
+"loop": false,
+"name": &"Hit_1",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("200_ufrst")
+}, {
+"duration": 1.0,
+"texture": ExtResource("201_85gdh")
+}, {
+"duration": 3.0,
+"texture": ExtResource("202_foxv3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("203_kaugm")
+}],
+"loop": false,
+"name": &"Hit_2",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("204_v46rn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("205_eaa75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("206_rmix4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("205_eaa75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("204_v46rn")
+}],
+"loop": false,
+"name": &"Hit_3",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("207_faoo8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("208_oy773")
+}, {
+"duration": 1.0,
+"texture": ExtResource("209_nigul")
+}, {
+"duration": 1.0,
+"texture": ExtResource("210_ylkac")
+}, {
+"duration": 1.0,
+"texture": ExtResource("211_xakjf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("212_v8u6r")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 0.25,
+"texture": ExtResource("213_n3ecg")
+}, {
+"duration": 0.25,
+"texture": ExtResource("214_6mclx")
+}, {
+"duration": 0.25,
+"texture": ExtResource("215_iax2l")
+}, {
+"duration": 0.25,
+"texture": ExtResource("216_t8t6j")
+}, {
+"duration": 0.25,
+"texture": ExtResource("217_i488j")
+}, {
+"duration": 0.25,
+"texture": ExtResource("218_o8vo6")
+}, {
+"duration": 0.25,
+"texture": ExtResource("219_j6r0j")
+}, {
+"duration": 0.25,
+"texture": ExtResource("220_s175u")
+}, {
+"duration": 0.25,
+"texture": ExtResource("221_2du7h")
+}, {
+"duration": 0.25,
+"texture": ExtResource("222_pgvjx")
+}, {
+"duration": 0.25,
+"texture": ExtResource("223_ceib2")
+}, {
+"duration": 0.25,
+"texture": ExtResource("224_6qakx")
+}, {
+"duration": 0.25,
+"texture": ExtResource("225_v1ddm")
+}, {
+"duration": 0.25,
+"texture": ExtResource("226_marnr")
+}, {
+"duration": 0.25,
+"texture": ExtResource("227_5wor3")
+}, {
+"duration": 0.25,
+"texture": ExtResource("228_4ely8")
+}, {
+"duration": 0.25,
+"texture": ExtResource("229_cax4c")
+}, {
+"duration": 0.25,
+"texture": ExtResource("230_4hnfl")
+}, {
+"duration": 0.25,
+"texture": ExtResource("231_nudes")
+}, {
+"duration": 0.25,
+"texture": ExtResource("232_17jal")
+}, {
+"duration": 0.25,
+"texture": ExtResource("233_c76cf")
+}, {
+"duration": 0.25,
+"texture": ExtResource("234_k2q5p")
+}, {
+"duration": 0.25,
+"texture": ExtResource("235_rawqc")
+}, {
+"duration": 0.25,
+"texture": ExtResource("236_lra4f")
+}, {
+"duration": 0.25,
+"texture": ExtResource("237_hbfce")
+}, {
+"duration": 0.25,
+"texture": ExtResource("238_s1a8q")
+}, {
+"duration": 0.25,
+"texture": ExtResource("239_es4us")
+}, {
+"duration": 0.25,
+"texture": ExtResource("240_ifar1")
+}, {
+"duration": 0.25,
+"texture": ExtResource("241_66jii")
+}, {
+"duration": 0.25,
+"texture": ExtResource("242_d0hvp")
+}, {
+"duration": 0.25,
+"texture": ExtResource("243_o1atn")
+}, {
+"duration": 0.25,
+"texture": ExtResource("244_sdehi")
+}, {
+"duration": 0.25,
+"texture": ExtResource("245_h7qbi")
+}, {
+"duration": 0.25,
+"texture": ExtResource("246_g8l5p")
+}, {
+"duration": 0.25,
+"texture": ExtResource("247_28tdy")
+}, {
+"duration": 0.25,
+"texture": ExtResource("248_uiw4v")
+}, {
+"duration": 0.25,
+"texture": ExtResource("249_v62o8")
+}, {
+"duration": 0.25,
+"texture": ExtResource("250_ta00g")
+}, {
+"duration": 0.25,
+"texture": ExtResource("251_5c720")
+}, {
+"duration": 0.25,
+"texture": ExtResource("252_4lgpx")
+}, {
+"duration": 0.25,
+"texture": ExtResource("253_2pygl")
+}, {
+"duration": 0.25,
+"texture": ExtResource("254_ga3vx")
+}, {
+"duration": 0.25,
+"texture": ExtResource("255_ar0t2")
+}, {
+"duration": 0.25,
+"texture": ExtResource("256_jwfxj")
+}, {
+"duration": 0.25,
+"texture": ExtResource("257_rg07x")
+}, {
+"duration": 0.25,
+"texture": ExtResource("258_i10u8")
+}, {
+"duration": 0.25,
+"texture": ExtResource("259_jmdyx")
+}, {
+"duration": 0.25,
+"texture": ExtResource("260_kdgqv")
+}, {
+"duration": 0.25,
+"texture": ExtResource("261_exmtb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("262_pq4ay")
+}, {
+"duration": 1.0,
+"texture": ExtResource("263_1gd4r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("264_lk437")
+}, {
+"duration": 1.0,
+"texture": ExtResource("265_7jh12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("266_j4wuk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("267_8puuy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("268_io1a8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("269_xpt3i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("270_1a2wt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("271_nphq5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("272_cmeid")
+}, {
+"duration": 1.0,
+"texture": ExtResource("273_j7u8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("274_ett8a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("275_5rryy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("276_pvxgh")
+}],
+"loop": false,
+"name": &"Intro",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("277_25ukf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("278_vhksn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("279_vblas")
+}, {
+"duration": 1.0,
+"texture": ExtResource("280_y66b2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("281_ynbqt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("282_wv0ky")
+}, {
+"duration": 1.0,
+"texture": ExtResource("283_rxx1i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("284_vu2ev")
+}, {
+"duration": 1.0,
+"texture": ExtResource("285_6e0eo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("286_xwujr")
+}],
+"loop": false,
+"name": &"Shiv_1",
+"speed": 18.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("287_dlhqy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("288_82hx0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("289_fury7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("290_bapmu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("291_rtbom")
+}, {
+"duration": 1.0,
+"texture": ExtResource("292_0nb2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("293_b2d4e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("294_4al5o")
+}],
+"loop": false,
+"name": &"Shiv_2",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("295_wm2r1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("296_a8wdq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("297_sai3b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("298_uw3su")
+}, {
+"duration": 1.0,
+"texture": ExtResource("299_04lww")
+}, {
+"duration": 1.0,
+"texture": ExtResource("300_m4j85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("301_non1t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("302_u8xll")
+}, {
+"duration": 1.0,
+"texture": ExtResource("303_pihim")
+}, {
+"duration": 1.0,
+"texture": ExtResource("304_jnqxd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("305_xtmav")
+}],
+"loop": false,
+"name": &"Shiv_3",
+"speed": 18.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("306_xehcs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("307_a6m6w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("308_iiaot")
+}, {
+"duration": 1.0,
+"texture": ExtResource("309_gf2fi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("310_61dj5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("311_jsyfm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("312_ka34j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("313_xwuyg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("314_sbc32")
+}, {
+"duration": 1.0,
+"texture": ExtResource("315_gl7ei")
+}],
+"loop": false,
+"name": &"Victory",
+"speed": 12.0
+}]
+
+[sub_resource type="Animation" id="Animation_x5qot"]
+resource_name = "Campfire_Idle"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CompanionSprite:scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2, 4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.02, 0.98), Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CampfireSprite:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2, 4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.02, 0.98), Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_p4kmt"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ShopSprite:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ShopSprite:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("316_71wj1")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CompanionSprite:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CampfireSprite:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_rqqed"]
+resource_name = "Shop_Idle"
+length = 24.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ShopSprite:scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.02, 0.98), Vector2(1, 1), Vector2(1.02, 0.98), Vector2(1, 1), Vector2(1.02, 0.98), Vector2(1, 1), Vector2(1.02, 0.98), Vector2(1, 1), Vector2(1.02, 0.98), Vector2(1, 1), Vector2(1.02, 0.98), Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ShopSprite:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 4, 8, 12, 16, 20),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("317_cgd52"), ExtResource("316_71wj1"), ExtResource("318_fv35k"), ExtResource("319_75m7x"), ExtResource("320_jyto1"), ExtResource("321_see5b")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k1b2i"]
+_data = {
+&"Campfire_Idle": SubResource("Animation_x5qot"),
+&"RESET": SubResource("Animation_p4kmt"),
+&"Shop_Idle": SubResource("Animation_rqqed")
+}
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ttqco"]
+blend_mode = 1
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hsqmw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("324_10sau")
+}, {
+"duration": 1.0,
+"texture": ExtResource("325_46qgt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("326_vaiit")
+}, {
+"duration": 1.0,
+"texture": ExtResource("327_ddj6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("328_1n0mr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("329_w36ea")
+}, {
+"duration": 1.0,
+"texture": ExtResource("324_10sau")
+}, {
+"duration": 1.0,
+"texture": ExtResource("325_46qgt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("326_vaiit")
+}, {
+"duration": 1.0,
+"texture": ExtResource("327_ddj6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("328_1n0mr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("329_w36ea")
+}, {
+"duration": 1.0,
+"texture": ExtResource("324_10sau")
+}, {
+"duration": 1.0,
+"texture": ExtResource("325_46qgt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("326_vaiit")
+}, {
+"duration": 1.0,
+"texture": ExtResource("327_ddj6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("328_1n0mr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("329_w36ea")
+}, {
+"duration": 1.0,
+"texture": ExtResource("324_10sau")
+}, {
+"duration": 1.0,
+"texture": ExtResource("325_46qgt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("326_vaiit")
+}, {
+"duration": 1.0,
+"texture": ExtResource("327_ddj6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("328_1n0mr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("329_w36ea")
+}],
+"loop": false,
+"name": &"CastEffect_1",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("330_57p0s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("331_7cx00")
+}, {
+"duration": 1.0,
+"texture": ExtResource("332_py0se")
+}, {
+"duration": 1.0,
+"texture": ExtResource("333_qidai")
+}, {
+"duration": 1.0,
+"texture": ExtResource("334_tj3c8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("335_7u54w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("336_3bd4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("337_544ef")
+}, {
+"duration": 1.0,
+"texture": ExtResource("338_n6yia")
+}, {
+"duration": 1.0,
+"texture": ExtResource("339_sbksq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("340_bmh30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("341_x1mli")
+}, {
+"duration": 1.0,
+"texture": ExtResource("330_57p0s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("331_7cx00")
+}, {
+"duration": 1.0,
+"texture": ExtResource("332_py0se")
+}, {
+"duration": 1.0,
+"texture": ExtResource("333_qidai")
+}, {
+"duration": 1.0,
+"texture": ExtResource("334_tj3c8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("335_7u54w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("336_3bd4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("337_544ef")
+}, {
+"duration": 1.0,
+"texture": ExtResource("338_n6yia")
+}, {
+"duration": 1.0,
+"texture": ExtResource("339_sbksq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("340_bmh30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("341_x1mli")
+}],
+"loop": false,
+"name": &"CastEffect_2",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("342_63ryt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("343_0oro4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("344_4vhuw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("345_bvj2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("346_5w4at")
+}, {
+"duration": 1.0,
+"texture": ExtResource("347_12o6o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("342_63ryt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("343_0oro4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("344_4vhuw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("345_bvj2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("346_5w4at")
+}, {
+"duration": 1.0,
+"texture": ExtResource("347_12o6o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("342_63ryt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("343_0oro4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("344_4vhuw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("345_bvj2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("346_5w4at")
+}, {
+"duration": 1.0,
+"texture": ExtResource("347_12o6o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("342_63ryt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("343_0oro4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("344_4vhuw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("345_bvj2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("346_5w4at")
+}, {
+"duration": 1.0,
+"texture": ExtResource("347_12o6o")
+}],
+"loop": false,
+"name": &"CastEffect_3",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("348_sqij4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("349_24h2t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("350_1o56b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("351_3p5hb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("352_8536d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("353_kifqw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("354_jfr65")
+}, {
+"duration": 1.0,
+"texture": ExtResource("355_qt6v2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("356_ncumg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("357_af0yu")
+}],
+"loop": false,
+"name": &"CastEffect_4",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("358_xqspv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("359_65q53")
+}, {
+"duration": 1.0,
+"texture": ExtResource("360_ovwbg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("361_ixgjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("362_85l5o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("363_f8ssd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("364_ikvkd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("365_xnohk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("366_2yicy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("367_cuu6p")
+}],
+"loop": false,
+"name": &"CastEffect_5",
+"speed": 15.0
+}]
+
+[node name="SakuyaCharacter" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(426, 178)
+sprite_frames = SubResource("SpriteFrames_sn4eb")
+animation = &"Victory"
+autoplay = "Idle"
+frame = 9
+frame_progress = 1.0
+
+[node name="ShopSprite" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("316_71wj1")
+flip_h = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_k1b2i")
+}
+
+[node name="CompanionSprite" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-163, -60)
+texture = ExtResource("322_avujo")
+flip_h = true
+
+[node name="CampfireSprite" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(128, 5)
+texture = ExtResource("323_m8sfs")
+flip_h = true
+
+[node name="SakuyaVoice" type="AudioStreamPlayer2D" parent="."]
+volume_db = 3.0
+
+[node name="SakuyaVFX" type="AnimatedSprite2D" parent="."]
+visible = false
+z_index = 1
+material = SubResource("CanvasItemMaterial_ttqco")
+position = Vector2(426, 132)
+sprite_frames = SubResource("SpriteFrames_hsqmw")
+animation = &"CastEffect_3"
