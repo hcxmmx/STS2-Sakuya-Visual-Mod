@@ -4,9 +4,10 @@ using HarmonyLib;
 
 namespace Hcxmmx.SakuyaMod.Scripts; 
 
-// 🚨 极其霸气的赛博劫持：直接锁定战败界面的本体！
-[HarmonyPatch(typeof(MegaCrit.Sts2.Core.Nodes.Screens.GameOverScreen.NGameOverScreen), "_Ready")]
-internal static class GameOverScreen_Ready_Patch
+// 🚨 极其霸气、绝对免疫手机端 AOT 裁剪的跨平台劫持！
+// 抛弃不稳定的 _Ready，精准狙击接口方法 AfterOverlayOpened！
+[HarmonyPatch(typeof(MegaCrit.Sts2.Core.Nodes.Screens.GameOverScreen.NGameOverScreen), nameof(MegaCrit.Sts2.Core.Nodes.Screens.GameOverScreen.NGameOverScreen.AfterOverlayOpened))]
+internal static class GameOverScreen_Opened_Patch
 {
     // ==========================================
     // 🎭 极其残忍的战损表情弹药库！
@@ -21,7 +22,7 @@ internal static class GameOverScreen_Ready_Patch
         // 有多少张就极其任性地往里加多少！
     };
 
-    private static void Postfix(Node __instance) 
+    private static void Postfix(MegaCrit.Sts2.Core.Nodes.Screens.GameOverScreen.NGameOverScreen __instance)
     {
         GD.Print("\n====== 😭 侦测到赛博惨败！启动【多重战损反馈协议】 ======");
 
