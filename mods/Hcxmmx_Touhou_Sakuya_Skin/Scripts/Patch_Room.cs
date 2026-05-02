@@ -227,3 +227,103 @@ internal static class NRestSiteRoom_Exit_Patch
         SakuyaGlobals.IsInShop = false;
     }
 }
+
+[HarmonyPatch(typeof(MegaCrit.Sts2.Core.Nodes.Events.Custom.NFakeMerchant), nameof(MegaCrit.Sts2.Core.Nodes.Events.Custom.NFakeMerchant._Ready))]
+internal static class NFakeMerchant_Ready_Patch
+{
+    private static void Postfix(MegaCrit.Sts2.Core.Nodes.Events.Custom.NFakeMerchant __instance)
+    {
+        GD.Print("\n====== 侦测到进入商店！启动精准鸠占鹊巢协议！ ======");
+        SakuyaGlobals.IsInShop = true;
+
+        var players = Traverse.Create(__instance).Field("_players").GetValue<System.Collections.IList>();
+        var playerVisuals = Traverse.Create(__instance).Field("_playerVisuals").GetValue<System.Collections.IList>();
+        if (players == null || playerVisuals == null || players.Count != playerVisuals.Count)
+        {
+            GD.PrintErr("💥 商店雷达中断：_players 或 _playerVisuals 数据异常或不匹配！");
+            return;
+        }
+
+        bool hasSakuya = false;
+        for (int i = 0; i < players.Count; i++)
+        {
+            var player = players[i];
+            var character = Traverse.Create(player).Property("Character").GetValue() ?? Traverse.Create(player).Field("Character").GetValue();
+            var entryName = SakuyaGlobals.GetCharacterEntry(character);
+            if (string.Equals(entryName, SakuyaGlobals.TargetCharacterId, StringComparison.OrdinalIgnoreCase))
+            {
+                hasSakuya = true;
+                GD.Print("🎯 商店 DNA 匹配成功！发现完美女仆！");
+                break;
+            }
+        }
+
+        if (!hasSakuya)
+        {
+            GD.Print("拦截：队伍里没有咲夜，保留原版队伍！");
+            return;
+        }
+
+        var characterContainer = __instance.GetNodeOrNull<Control>("%CharacterContainer");
+        if (characterContainer == null)
+        {
+            return;
+        }
+
+        var scene = SakuyaGlobals.SakuyaScene ?? ResourceLoader.Load<PackedScene>(SakuyaGlobals.SakuyaScenePath);
+        SakuyaGlobals.SakuyaScene = scene;
+        if (scene == null)
+        {
+            return;
+        }
+
+        for (int i = 0; i < players.Count; i++)
+        {
+            var player = players[i];
+            var character = Traverse.Create(player).Property("Character").GetValue() ?? Traverse.Create(player).Field("Character").GetValue();
+            var entryName = SakuyaGlobals.GetCharacterEntry(character);
+            
+            // 查身份证！不是咲夜就极其冷酷地跳过
+            if (!string.Equals(entryName, SakuyaGlobals.TargetCharacterId, StringComparison.OrdinalIgnoreCase))
+            {
+                continue;
+            }
+
+            GD.Print($"🎯 精准锁定！玩家 {i} 是完美女仆咲夜！");
+            
+            // 极其关键：直接从 _playerVisuals 里拿对应的 UI 肉体，绝对不会错位！
+            var targetChild = playerVisuals[i] as Godot.Node2D;
+            if (targetChild == null) continue;
+
+            // 抹杀原版肉体
+            targetChild.Hide();
+            
+            // 注入咲夜商店机甲
+            var sakuyaShopMecha = scene.Instantiate<Node2D>();
+            sakuyaShopMecha.Name = $"SakuyaShopMecha_{i}";
+            characterContainer.AddChild(sakuyaShopMecha);
+
+            // 极其精准地继承原位置
+            sakuyaShopMecha.Position = targetChild.Position + new Vector2(0, -200f);
+            sakuyaShopMecha.Scale = new Vector2(0.7f, 0.7f);
+
+            var combatSprite = SakuyaGlobals.FindFirstNode<AnimatedSprite2D>(sakuyaShopMecha);
+            var shopSprite = SakuyaGlobals.FindFirstNode<Sprite2D>(sakuyaShopMecha, s => s.Name == "ShopSprite");
+            var animPlayer = SakuyaGlobals.FindFirstNode<AnimationPlayer>(sakuyaShopMecha);
+
+            if (combatSprite != null) combatSprite.Visible = false;
+            if (shopSprite != null) shopSprite.Visible = true;
+            if (animPlayer != null) animPlayer.Play("Shop_Idle");
+        }
+    }
+}
+
+[HarmonyPatch(typeof(MegaCrit.Sts2.Core.Nodes.Events.Custom.NFakeMerchant), "HideScreen")]
+internal static class NFakeMerchant_HideScreen_Patch
+{
+    private static void Prefix()
+    {
+        GD.Print("\n====== 侦测到离开商店！摘除物理锁！ ======");
+        SakuyaGlobals.IsInShop = false;
+    }
+}
